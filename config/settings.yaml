@@ -1,0 +1,27 @@
+# CREATIVE HQ — system settings
+# Edit these values to change models and spending limits.
+
+models:
+  # Model per agent. "opus" / "sonnet" / "haiku" are aliases resolved by the
+  # Claude Agent SDK to the current version of each model family.
+  # Opus = highest quality. Switch an agent to "sonnet" to lower its cost.
+  default: opus
+  overrides: {}        # e.g. { AG-002: sonnet }
+
+budgets:
+  # Hard limits in US dollars. The system stops before exceeding them.
+  per_run_usd: 8.00        # maximum for one full request (all agents together)
+  per_day_usd: 25.00       # maximum per calendar day (all runs together)
+  # Per-task limits live in each agent file (max_budget_usd).
+
+workflow:
+  max_revision_rounds: 1   # Copywriter fixes after Supervisor rejects, before going to you
+  task_retries: 1          # automatic retry for temporary errors (network, rate limit)
+  max_deliverables: 5      # safety cap on how many carousels one request may produce
+
+paths:
+  database: data/creative_hq.db
+  deliverables: deliverables
+  logs: logs
+  clients: clients
+  agents: agents

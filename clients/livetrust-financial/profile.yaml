@@ -1,0 +1,54 @@
+# Client profile — Livetrust Financial
+# Fields marked TODO were NOT provided yet. The agents are told to treat them as
+# unknown and never invent them. Fill them in as soon as Kevin confirms them.
+
+client_id: livetrust-financial
+company: Livetrust Financial
+contact_name: Kevin Martinez
+contact_role: Financial advisor (business financing)   # wording to confirm with Kevin
+industry:
+  - SBA financing
+  - Franchise financing
+  - Business acquisitions
+  - Small business funding
+content_language: English
+main_objective: >
+  Create accurate, professional, educational Instagram carousels that position
+  Kevin Martinez as a knowledgeable financial advisor.
+target_audience: >
+  Aspiring and current small business owners in the United States: people
+  planning to buy a franchise or an existing business, and owners looking for
+  growth or working-capital funding.
+instagram_handle: TODO          # e.g. @livetrustfinancial — not confirmed
+website: TODO
+cta_default: "Have questions about financing your business? Send us a DM."
+
+brand:
+  # Placeholder palette (professional finance look) until Kevin provides his brand kit.
+  status: placeholder
+  colors:
+    primary: "#0B2545"     # deep navy (backgrounds)
+    secondary: "#13315C"   # navy (cards)
+    accent: "#E0A526"      # gold (highlights)
+    light: "#F4F6F8"       # off-white (light slides)
+    text_dark: "#0B2545"
+    text_light: "#FFFFFF"
+  fonts:
+    heading: "Inter"
+    body: "Inter"
+  voice:
+    - Professional, trustworthy and clear
+    - Educational, not salesy
+    - Plain English; explain jargon (e.g. "SBA 7(a)", "DSCR") when used
+    - Confident but never hype
+
+compliance:
+  - Never guarantee loan approval, rates, terms or timelines.
+  - Never present content as personalized financial, legal or tax advice.
+  - Every caption ends with the disclaimer below.
+  - Loan program figures (caps, fees, rates) must come from a verified, preferably official, source and must be described as subject to change.
+  - Do not name or imply endorsement by the SBA or any government agency.
+disclaimer: >
+  This content is for educational purposes only and is not financial, legal or
+  tax advice. Loan programs, terms and eligibility are subject to change and
+  lender approval.
