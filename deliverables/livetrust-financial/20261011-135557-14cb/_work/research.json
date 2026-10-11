@@ -1,0 +1,206 @@
+{
+  "research": {
+    "sources": [
+      {
+        "id": "S1",
+        "url": "https://www.sba.gov/funding-programs/loans/7a-loans",
+        "title": "7(a) loans - Small Business Administration",
+        "publisher": "U.S. Small Business Administration (sba.gov)",
+        "accessed_via": "WebSearch",
+        "relevant_excerpt": "Search snippet, accessed 2026-10-11 (the page fetch was blocked by the proxy): 7(a) loans can be used for acquiring, refinancing, or improving real estate and/or buildings; short- and long-term working capital; refinancing current business debt; purchasing and installation of machinery and equipment; purchasing furniture, fixtures, and supplies; changes of ownership (complete or partial); and multiple purpose loans."
+      },
+      {
+        "id": "S2",
+        "url": "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility",
+        "title": "SBA lender resources: Partnering with SBA loan programs (7(a) terms, conditions, eligibility)",
+        "publisher": "U.S. Small Business Administration (sba.gov)",
+        "accessed_via": "WebSearch",
+        "relevant_excerpt": "Search snippet, accessed 2026-10-11: The 7(a) loan program, SBA's primary business loan program, provides a loan guarantee to lenders that allow them to provide financial help for small businesses."
+      },
+      {
+        "id": "S3",
+        "url": "https://www.sba.gov/article/2023/08/10/business-loan-program-improvements",
+        "title": "Business Loan Program Improvements",
+        "publisher": "U.S. Small Business Administration (sba.gov)",
+        "accessed_via": "WebSearch",
+        "relevant_excerpt": "Search snippet, accessed 2026-10-11: The SBA 7(a) loan is a flexible product that can be used for working capital, debt refinance, change of ownership, etc. Since May 2023, partial changes of ownership are permitted."
+      },
+      {
+        "id": "S5",
+        "url": "https://caweb.sba.gov/library/pdf/Form1919_Borrower_Information.pdf",
+        "title": "SBA Form 1919 (Revised 09/20) SBA 7a Borrower Information Form",
+        "publisher": "U.S. Small Business Administration",
+        "accessed_via": "WebSearch",
+        "relevant_excerpt": "Search result, accessed 2026-10-11: an older (09/20) version of the 7(a) Borrower Information Form, the borrower form submitted to the participating lender."
+      },
+      {
+        "id": "S6",
+        "url": "https://www.sba.gov/starting-business/write-your-business-plan/funding-request",
+        "title": "Write your business plan (funding request)",
+        "publisher": "U.S. Small Business Administration (sba.gov)",
+        "accessed_via": "WebSearch",
+        "relevant_excerpt": "Search snippet, accessed 2026-10-11: Outline your funding requirements and clearly explain how much funding you'll need and what you'll use it for. Give a detailed description of how you'll use your funds, e.g. to buy equipment or materials, pay salaries, or cover specific bills until revenue increases. Supplement with financial projections; established businesses should include income statements, balance sheets and cash flow statements."
+      },
+      {
+        "id": "S7",
+        "url": "https://www.sba.gov/blog/5-ways-separate-your-personal-business-finances",
+        "title": "5 Ways to Separate Your Personal and Business Finances",
+        "publisher": "U.S. Small Business Administration (sba.gov blog)",
+        "accessed_via": "WebSearch",
+        "relevant_excerpt": "Search snippet, accessed 2026-10-11: To keep personal funds and business funds completely separate, you must have two different bank accounts... This sets you up for clean and accurate bookkeeping. Failing to separate your personal and business finances leads to an accounting nightmare for your bookkeeper."
+      },
+      {
+        "id": "S8",
+        "url": "https://www.irs.gov/pub/irs-pdf/p583.pdf",
+        "title": "Publication 583 (Rev. December 2024) Starting a Business and Keeping Records",
+        "publisher": "Internal Revenue Service (irs.gov)",
+        "accessed_via": "WebSearch",
+        "relevant_excerpt": "Search snippet, accessed 2026-10-11: The business checkbook is your basic source of information for recording business expenses. Deposit all daily receipts in your business checking account. It's a good idea to keep separate business and personal accounts, as this makes it easier to keep records."
+      },
+      {
+        "id": "S9",
+        "url": "https://ascent.sba.gov/8f/47/8a1dba9a4607a222c71786578893/access-to-capital-1-2-debt-funding-tool.pdf",
+        "title": "Preparing for Loan Underwriting and Examining Your Loan Agreement (SBA Ascent)",
+        "publisher": "U.S. Small Business Administration (SBA Ascent)",
+        "accessed_via": "WebSearch",
+        "relevant_excerpt": "Search snippet, accessed 2026-10-11 (the PDF fetch was blocked): Loan underwriting is a process lenders use; a successful underwriting process means the lender approves the loan and produces a loan agreement. Lenders conduct financial analysis of past performance, present condition and future viability, and the borrower's ability to repay from business cash flow is a key consideration."
+      },
+      {
+        "id": "S10",
+        "url": "https://www.lendingtree.com/business/sba/franchise/",
+        "title": "SBA Loans for Franchises: What to Know",
+        "publisher": "LendingTree",
+        "accessed_via": "WebSearch",
+        "relevant_excerpt": "Search result, accessed 2026-10-11: a third-party guide on SBA loans for franchise purchases. Aggregated search snippets from franchise lending guides say 7(a) loans can fund franchise fees, build-out, equipment, initial inventory and working capital, but that many lenders require franchise fees to be paid before the SBA loan closes."
+      },
+      {
+        "id": "S11",
+        "url": "https://help.zenbusiness.com/small-business-resources/separating-business-and-personal-finances",
+        "title": "Why You Need to Separate Business and Personal Finances (and How to Do It)",
+        "publisher": "ZenBusiness",
+        "accessed_via": "WebSearch",
+        "relevant_excerpt": "Search snippet, accessed 2026-10-11: Lenders evaluating a loan or line of credit want to see consistent business deposits and expenses in a dedicated account. If business and personal spending are mixed together, it's harder to demonstrate real business cash flow."
+      },
+      {
+        "id": "S12",
+        "url": "https://www.sba.gov/business-guide/manage-your-business/manage-your-finances",
+        "title": "Manage your business finances - Small Business Administration",
+        "publisher": "U.S. Small Business Administration (sba.gov)",
+        "accessed_via": "WebSearch",
+        "relevant_excerpt": "Search result, accessed 2026-10-11: the SBA business guide page on managing finances, including bookkeeping and separating business finances. The direct fetch was blocked, so its content could not be quoted."
+      }
+    ],
+    "topics": [
+      {
+        "topic_id": "T1",
+        "verified_facts": [
+          {
+            "fact": "Slide 2 framing is supported: SBA 7(a) loans are made by lenders (SBA 'participating lenders'), and the SBA provides a guarantee to those lenders. Suggested one-liner: 'SBA loans are made by banks and other approved lenders, and the SBA guarantees part of the loan. The lender still reviews and decides on each application.' This avoids implying SBA endorsement.",
+            "source_ids": [
+              "S2",
+              "S1"
+            ],
+            "confidence": "high",
+            "may_change": false
+          },
+          {
+            "fact": "SBA lists short- and long-term working capital as an allowed use of 7(a) proceeds.",
+            "source_ids": [
+              "S1",
+              "S3"
+            ],
+            "confidence": "high",
+            "may_change": true
+          },
+          {
+            "fact": "SBA lists changes of ownership (complete or partial) as an allowed use of 7(a) proceeds. This supports 'buying an existing business' as an example. Partial changes of ownership have been allowed since May 2023.",
+            "source_ids": [
+              "S1",
+              "S3"
+            ],
+            "confidence": "high",
+            "may_change": true
+          },
+          {
+            "fact": "Inventory is a listed loan purpose on SBA Form 1919, the 7(a) borrower form. Equipment, furniture, fixtures and supplies are also listed uses.",
+            "source_ids": [
+              "S1"
+            ],
+            "confidence": "high",
+            "may_change": true
+          },
+          {
+            "fact": "Use-of-funds breakdown is supported: SBA Form 1919 asks the applicant to split the loan request into 'Purpose of the loan' amounts that add up to the total request. SBA's business plan guidance tells borrowers to give 'a detailed description of how you'll use your funds.' So 'lenders commonly ask for a clear breakdown of how the money will be used' is accurate. 'Use of proceeds' is the formal term.",
+            "source_ids": [
+              "S6"
+            ],
+            "confidence": "high",
+            "may_change": false
+          },
+          {
+            "fact": "SBA and the IRS both recommend keeping separate business and personal bank accounts. SBA says mixing the two leads to 'an accounting nightmare' and that separation supports clean, accurate bookkeeping. These sources present it as general best practice, not as a formal SBA loan requirement.",
+            "source_ids": [
+              "S7",
+              "S8"
+            ],
+            "confidence": "high",
+            "may_change": false
+          },
+          {
+            "fact": "A reputable non-government source says lenders want to see consistent business deposits and expenses in a dedicated account, and that mixed spending makes real business cash flow harder to show. This supports 'often' or 'can make it harder' wording.",
+            "source_ids": [
+              "S11"
+            ],
+            "confidence": "medium",
+            "may_change": false
+          },
+          {
+            "fact": "Underwriting definition is supported: SBA material describes underwriting as the lender's process for reviewing a loan, including financial analysis of the business and its ability to repay from cash flow. 'The lender's review of your application, including whether the business can repay' is an accurate plain-English definition.",
+            "source_ids": [
+              "S9"
+            ],
+            "confidence": "medium",
+            "may_change": false
+          },
+          {
+            "fact": "SBA's business plan guidance tells established businesses to provide income statements, balance sheets and cash flow statements, and tells new businesses to provide projections. This supports the idea that lenders compare financial records, so they should be current and consistent.",
+            "source_ids": [
+              "S6"
+            ],
+            "confidence": "medium",
+            "may_change": false
+          }
+        ],
+        "unverified_claims": [
+          "Franchise fees and closing costs as allowed 7(a) uses: no official SBA source was retrieved that lists 'franchise fees' or 'closing costs' by name. Third-party guides say franchise fees can sometimes be included, but also that many lenders require them to be paid before closing. On slide 4, frame these as 'costs to consider in your budget,' not 'costs the loan can cover.'",
+          "That 'numbers not matching across tax returns, financial statements and bank statements' is a commonly cited lender problem: no official source states this directly. Safer wording: 'Lenders review your tax returns, financial statements and bank statements together, so it helps when they tell a consistent story.'",
+          "That 'asking for too much without justification' is a common reason for problems: not directly sourced. Safer wording: 'Asking for more than you can explain can raise questions. Every dollar should tie back to your use of funds.'",
+          "That owners 'often begin looking for financing after signing' agreements (frequency claim, Mistake #1): no source found. Safer wording: 'Some owners start looking for financing only after they've signed a purchase agreement, franchise agreement or lease. That can leave less room to prepare.'",
+          "That out-of-date bookkeeping is a 'commonly cited' lender problem: only general best-practice support was found (S7, S8, S6). Safer wording: 'Keeping your books current makes it easier to provide the financial statements lenders typically review.'",
+          "Hashtags: no source was found on hashtag ownership. Tags such as #SmallBusinessLoans, #BusinessFinancing, #FranchiseFinancing, #SmallBusinessOwner and #BusinessAcquisition are generic and do not imply SBA affiliation. #SBALoan is commonly used by private lenders, but if the operator wants zero ambiguity, #SBALoans or #SBAFinancing is lower-risk than bare #SBA. Avoid #SBA, #SBAgov and anything that looks like an agency handle. This is editorial judgment, not a verified fact."
+        ],
+        "caveats": [
+          "Direct WebFetch of sba.gov pages was blocked by the proxy. All official facts come from search-result titles and snippets of official sba.gov or irs.gov URLs, so confidence is slightly lower than it would be from a full page read. The operator may want to spot-check S1 and S4 in a browser.",
+          "All sources were accessed on 2026-10-11. Allowed uses of 7(a) loans are set by SBA rules (SOP 50 10) and can change. Describe them as 'generally' allowed, subject to lender and SBA approval.",
+          "No source found makes 'start early' or 'compare lenders' misleading. Both are general good-practice statements, and no timeline language is needed. Do not imply that starting early speeds up approval or guarantees it.",
+          "Separating finances and keeping current books are general best practices (SBA, IRS), not formal SBA eligibility rules. Use 'commonly expected,' 'helps' or 'makes it easier,' not 'required.'",
+          "Search snippets included guarantee percentages and loan caps. I left them out on purpose, as the brief instructs.",
+          "Keep slide 2 neutral: 'the SBA guarantees part of the loan.' Avoid 'SBA-approved,' 'government-backed approval' or anything suggesting the SBA endorses Livetrust or Kevin."
+        ]
+      }
+    ]
+  },
+  "source_report": {
+    "rejected": [
+      {
+        "id": "S4",
+        "url": "https://www.sba.gov/sites/default/files/2024-01/SBAForm1919-R%2012-28-23(2).pdf",
+        "title": "SBA 7(a) Borrower Information Form (SBA Form 1919)",
+        "publisher": "U.S. Small Business Administration (sba.gov)",
+        "accessed_via": "WebSearch",
+        "relevant_excerpt": "Search snippet, accessed 2026-10-11: Form 1919 collects information about the applicant, the loan request and existing debt, and is submitted to the SBA participating lender. The 'Purpose of the loan' amounts should equal the total loan request. Listed purposes include Purchase Real Estate, Construction, Equipment, Inventory, Eligible Debt Refinancing and Working Capital. 'All 7(a) loan proceeds will be used only for the Applicant business as approved by the Lender and/or SBA.'"
+      }
+    ],
+    "dropped_facts": []
+  }
+}

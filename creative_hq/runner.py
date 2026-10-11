@@ -176,6 +176,7 @@ class AgentRunner:
         self._event(task_id, spec.id, "result", {
             "subtype": final.subtype, "is_error": final.is_error, "cost_usd": result.cost_usd,
             "turns": final.num_turns, "errors": final.errors, "api_error_status": final.api_error_status,
+            "usage": final.usage, "model_usage": final.model_usage, "duration_api_ms": final.duration_api_ms,
         })
 
         if final.subtype == "error_max_budget_usd":

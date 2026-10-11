@@ -1,0 +1,119 @@
+{
+  "topic_id": "T1",
+  "title": "Applying for an SBA loan? 3 common, avoidable mistakes",
+  "slides": [
+    {
+      "n": 1,
+      "role": "hook",
+      "headline": "3 common SBA loan application mistakes",
+      "body": "All three are things you can control: timing, amount and organization.\n* General education. Every lender and deal is different."
+    },
+    {
+      "n": 2,
+      "role": "content",
+      "headline": "First, a quick reminder",
+      "body": "SBA loans are made by banks and other approved lenders, and the SBA guarantees part of the loan.\nThe lender still reviews and decides on each application, so preparation matters."
+    },
+    {
+      "n": 3,
+      "role": "content",
+      "headline": "Mistake #1: Starting too late",
+      "body": "Mistake: Looking for financing only after signing a purchase agreement or lease.\nWhy it hurts: Less room to compare lenders or prepare for underwriting (the lender's review).\nInstead: Start the conversation early."
+    },
+    {
+      "n": 4,
+      "role": "content",
+      "headline": "Mistake #2: Asking for the wrong amount",
+      "body": "Mistake: Sizing the loan to the purchase price only.\nWhy it hurts: You can miss working capital (day-to-day money) or inventory. Unexplained extras can raise questions.\nInstead: List what every dollar pays for (use of funds)."
+    },
+    {
+      "n": 5,
+      "role": "content",
+      "headline": "Mistake #3: Messy or mixed finances",
+      "body": "Mistake: Mixed personal and business spending, or books that aren't current.\nWhy it hurts: Mixing can hide real cash flow. Lenders typically review your financial records together.\nInstead: Separate accounts, current books, consistent numbers."
+    },
+    {
+      "n": 6,
+      "role": "content",
+      "headline": "Your quick self-check",
+      "body": "✓ Start early.\n✓ Know your numbers and your use of funds.\n✓ Get your finances clean and consistent.\n* Preparing well doesn't guarantee approval."
+    },
+    {
+      "n": 7,
+      "role": "cta",
+      "headline": "Questions about financing your business?",
+      "body": "Every business and deal is different. We're happy to talk through your questions.\n* General education, not personalized advice."
+    }
+  ],
+  "caption": "Applying for an SBA loan? A lot of friction comes from things you control: when you start, how much you ask for, and how organized your finances are.\n\n1) Starting too late. Some owners look for financing only after signing a purchase agreement, franchise agreement or lease. That leaves less room to compare lenders and prepare for underwriting: the lender's review of your application, including whether the business can repay.\n\n2) Asking for the wrong amount. Look beyond the price tag. Working capital (money for day-to-day operations), inventory, franchise-related costs and closing costs (costs paid to finalize the loan or purchase) are worth considering in your budget. A clear use-of-funds breakdown shows exactly what the money will pay for.\n\n3) Messy or mixed finances. Keep separate business and personal accounts, keep your books current, and make sure your numbers tell a consistent story.\n\nAvoiding these mistakes doesn't guarantee approval, and every lender is different. But it can make the process smoother.\n\nHave questions about financing your business? Send us a DM.\n\nThis content is for educational purposes only and is not financial, legal or tax advice. Loan programs, terms and eligibility are subject to change and lender approval.",
+  "hashtags": [
+    "#SmallBusinessLoans",
+    "#BusinessFinancing",
+    "#FranchiseFinancing",
+    "#SmallBusinessOwner",
+    "#BusinessAcquisition",
+    "#LoanReady"
+  ],
+  "cta": "Have questions about financing your business? Send us a DM.",
+  "fact_refs": [
+    {
+      "slide": 2,
+      "claim": "SBA loans are made by banks and other approved lenders, and the SBA guarantees part of the loan; the lender reviews and decides",
+      "source_ids": [
+        "S2",
+        "S1"
+      ]
+    },
+    {
+      "slide": 3,
+      "claim": "Underwriting = the lender's review of the application, including whether the business can repay (also defined in the caption)",
+      "source_ids": [
+        "S9"
+      ]
+    },
+    {
+      "slide": 4,
+      "claim": "Working capital (money for day-to-day operations) is a cost to plan for; SBA lists it as an allowed 7(a) use",
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "slide": 4,
+      "claim": "Inventory as a cost to include in the request (listed loan purpose)",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "slide": 4,
+      "claim": "Lenders commonly ask for a clear breakdown of how the money will be used (use of funds)",
+      "source_ids": [
+        "S6"
+      ]
+    },
+    {
+      "slide": 5,
+      "claim": "Keeping separate business and personal accounts is recommended and supports clean, accurate bookkeeping",
+      "source_ids": [
+        "S7",
+        "S8"
+      ]
+    },
+    {
+      "slide": 5,
+      "claim": "Mixed spending makes real business cash flow harder to show",
+      "source_ids": [
+        "S11"
+      ]
+    },
+    {
+      "slide": 5,
+      "claim": "Lenders typically review financial records (e.g. income statements, balance sheets, cash flow statements) together, so they should be current and consistent",
+      "source_ids": [
+        "S6"
+      ]
+    }
+  ]
+}

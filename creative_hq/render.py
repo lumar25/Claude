@@ -51,7 +51,7 @@ def _hl(text: str, highlight: str) -> str:
     return safe
 
 
-NOTE_SPLIT = re.compile(r"(?:^|\s)\*(?=[A-Z])")
+NOTE_SPLIT = re.compile(r"(?:^|\s)\* ?(?=[A-Z])")
 
 
 def _split_notes(text: str) -> tuple[str, list[str]]:
