@@ -3,6 +3,8 @@
 # unknown and never invent them. Fill them in as soon as Kevin confirms them.
 
 client_id: livetrust-financial
+# Words that identify this client in a request (lowercase).
+aliases: [kevin, martinez, livetrust]
 company: Livetrust Financial
 contact_name: Kevin Martinez
 contact_role: Financial advisor (business financing)   # wording to confirm with Kevin

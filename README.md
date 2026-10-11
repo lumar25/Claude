@@ -25,6 +25,22 @@ and its own spending limit. Results move between them through a shared task work
  deliverables/<client>/<run>/ ──► status PENDING APPROVAL ──► you approve or reject
 ```
 
+## Cómo usarlo (sin programar)
+
+**Opción A — en Claude Code (app, web o terminal), lo más simple.** Abre una sesión en este repositorio y escribe lo que necesitas, por ejemplo:
+
+> Crea un carrusel de Instagram para Kevin sobre los requisitos para financiar una franquicia
+
+Claude reconoce la petición (gracias a `CLAUDE.md` y `.claude/skills/creative-hq`), lanza el flujo real de los 6 agentes y te enseña el resultado. También puedes escribir "¿cómo van mis encargos?", "aprueba el encargo 2026…" o "comprueba que los agentes funcionan". En las sesiones en la nube, las dependencias se instalan solas al empezar (`.claude/hooks/session-start.sh`).
+
+**Opción B — chat en tu propia terminal.**
+```bash
+python -m creative_hq chat
+```
+Escribe la petición en lenguaje natural. Antes de gastar crédito te pide confirmación (s/n). Comandos rápidos: `estado`, `historial`, `aprobar <id>`, `rechazar <id> <nota>`, `comprobar`, `salir`.
+
+**Comprobar que los 6 agentes funcionan de verdad** (una llamada real por agente, unos $0.15): `python -m creative_hq check --live`
+
 ## Folder map
 
 | Path | What it is |
@@ -76,7 +92,7 @@ python -m creative_hq history                # topics already used (the Strategi
 ## Adding a client
 
 Copy `clients/livetrust-financial/` to `clients/<new-id>/`, then edit `profile.yaml` and the
-knowledge files. Add a name alias in `CLIENT_ALIASES` in `creative_hq/__main__.py`, or pass `--client <new-id>`.
+knowledge files. Put the words that identify the client in `aliases:` inside `profile.yaml` (no Python needed).
 
 ## Current limits and next steps
 
