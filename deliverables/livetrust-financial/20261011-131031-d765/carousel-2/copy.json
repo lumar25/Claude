@@ -1,0 +1,135 @@
+{
+  "topic_id": "T2",
+  "title": "Getting loan ready: 5 things lenders commonly look at",
+  "slides": [
+    {
+      "n": 1,
+      "role": "hook",
+      "headline": "5 things lenders commonly look at",
+      "body": "Thinking about a business loan? Here's what lenders commonly review before making a decision, explained in plain English.\n\nEvery lender is different. This is a general overview."
+    },
+    {
+      "n": 2,
+      "role": "content",
+      "headline": "1. Credit history",
+      "body": "Your credit history is your record of how you've handled past debts. Lenders commonly review your personal credit, plus business credit if the business has any.\n\nExpectations vary by lender."
+    },
+    {
+      "n": 3,
+      "role": "content",
+      "headline": "2. Cash injection: your skin in the game",
+      "body": "A cash injection (also called equity) is money you put into the deal yourself. Lenders commonly expect some.\n\nHow much varies by lender, program and type of deal."
+    },
+    {
+      "n": 4,
+      "role": "content",
+      "headline": "3. Cash flow and DSCR",
+      "body": "Cash flow: money coming in vs. going out.\n\nDSCR (Debt Service Coverage Ratio) compares the cash available for loan payments with the payments themselves.\n\nExample: $140K ÷ $100K = 1.40\n\n*Hypothetical illustration, not a lender requirement."
+    },
+    {
+      "n": 5,
+      "role": "content",
+      "headline": "4. Documents",
+      "body": "Lenders commonly ask for items such as:\n• Personal and business tax returns\n• A profit & loss statement (income and expenses over a period)\n• A personal financial statement\n• Owner résumés\n\nThe exact list varies."
+    },
+    {
+      "n": 6,
+      "role": "content",
+      "headline": "5. Business plan and projections",
+      "body": "Projections are your estimates of future revenue, expenses and cash flow, plus the assumptions behind them.\n\nMost lenders expect a business plan for startup funding, when there's little or no track record."
+    },
+    {
+      "n": 7,
+      "role": "cta",
+      "headline": "Preparation starts with understanding",
+      "body": "Have questions about financing your business? Send us a DM.\n\nRequirements vary. This isn't a guaranteed checklist, and preparing well doesn't guarantee approval."
+    }
+  ],
+  "caption": "Being \"loan ready\" isn't about hitting one magic number. It's about understanding what lenders commonly review and getting organized before you apply.\n\nA few extra notes:\n\n• Credit matters beyond the yes-or-no decision. Lenders also use credit scores and credit history to help set interest rates.\n\n• About DSCR: a ratio below 1.0 means the business isn't generating enough cash to cover its loan payments. Lenders set their own minimums, and program rules can also apply, so there's no single universal target.\n\n• For SBA 7(a) applications, owners commonly provide a personal financial statement, and the SBA's Borrower Information Form asks about existing debt. Keeping a current list of what the business owes makes this step easier.\n\n• Write down the assumptions behind your projections, such as where your revenue estimate comes from. That makes them easier to explain.\n\nMissed our last post? It explains how SBA 7(a) loans work, including who lends and who guarantees. 📌 Save this one for when you start preparing.\n\nHave questions about financing your business? Send us a DM.\n\nThis content is for educational purposes only and is not financial, legal or tax advice. Loan programs, terms and eligibility are subject to change and lender approval.",
+  "hashtags": [
+    "#LoanReady",
+    "#BusinessLoans",
+    "#SmallBusinessFinancing",
+    "#SmallBusinessOwner",
+    "#CashFlow",
+    "#BusinessPlan",
+    "#Entrepreneurship"
+  ],
+  "cta": "Have questions about financing your business? Send us a DM.",
+  "fact_refs": [
+    {
+      "slide": 2,
+      "claim": "Lenders commonly review personal credit, and business credit if any. Expectations vary by lender (no single SBA minimum score).",
+      "source_ids": [
+        "S18",
+        "S25"
+      ]
+    },
+    {
+      "slide": 3,
+      "claim": "Lenders commonly expect some equity or cash injection. The amount varies by lender, program and deal type.",
+      "source_ids": [
+        "S15",
+        "S16",
+        "S17"
+      ]
+    },
+    {
+      "slide": 4,
+      "claim": "DSCR compares cash available for debt service with total debt service (principal + interest).",
+      "source_ids": [
+        "S21",
+        "S22"
+      ]
+    },
+    {
+      "slide": 4,
+      "claim": "Hypothetical: $140K ÷ $100K = 1.40 (illustration only, not a requirement).",
+      "source_ids": [
+        "S21"
+      ]
+    },
+    {
+      "slide": 5,
+      "claim": "Commonly requested items include tax returns, a P&L, a personal financial statement and owner résumés.",
+      "source_ids": [
+        "S19",
+        "S20"
+      ]
+    },
+    {
+      "slide": 6,
+      "claim": "Most lenders expect a business plan for startup funding. The SBA checklist asks for projections with a written explanation.",
+      "source_ids": [
+        "S18",
+        "S19",
+        "S17"
+      ]
+    },
+    {
+      "slide": 0,
+      "claim": "Caption: lenders use credit scores to determine credit risk and interest rates.",
+      "source_ids": [
+        "S18"
+      ]
+    },
+    {
+      "slide": 0,
+      "claim": "Caption: a DSCR below 1.0 means not enough cash for payments. Lenders set their own minimums, and program rules can also apply.",
+      "source_ids": [
+        "S21",
+        "S22",
+        "S9"
+      ]
+    },
+    {
+      "slide": 0,
+      "claim": "Caption: owners provide personal financial statements. Form 1919 asks about existing debt.",
+      "source_ids": [
+        "S19",
+        "S5",
+        "S20"
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@
     python -m creative_hq check                         # verify environment and configuration
     python -m creative_hq run "Create two Instagram carousels for Kevin"
     python -m creative_hq status [RUN_ID]               # list runs, or show one run's tasks
+    python -m creative_hq review RUN_ID                 # re-render + new Supervisor review
     python -m creative_hq approve RUN_ID [--note ...]   # record your approval (does NOT publish)
     python -m creative_hq reject RUN_ID --note ...
     python -m creative_hq history [CLIENT_ID]           # content history used to avoid repetition
@@ -102,6 +103,8 @@ def main() -> int:
     r.add_argument("--client")
     s = sub.add_parser("status")
     s.add_argument("run_id", nargs="?")
+    rv = sub.add_parser("review")
+    rv.add_argument("run_id")
     for name in ("approve", "reject"):
         a = sub.add_parser(name)
         a.add_argument("run_id")
@@ -128,6 +131,17 @@ def main() -> int:
         else:
             print(f"Error: {run['error']}")
         return 0 if run["status"] == "pending_approval" else 1
+
+    if args.cmd == "review":
+        setup_logging(settings)
+        from .workflow import Workflow
+        run = store.get_run(args.run_id)
+        if not run:
+            raise SystemExit("unknown run id")
+        asyncio.run(Workflow(settings, load_agents(settings), store).rereview(load_client(settings, run["client_id"]), args.run_id))
+        run = store.get_run(args.run_id)
+        print(f"\nRun {args.run_id}: {run['status']}" + (f" ({run['error']})" if run["error"] else ""))
+        return 0
 
     if args.cmd == "status":
         if not args.run_id:

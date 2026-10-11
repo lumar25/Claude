@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import html
+import re
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
@@ -19,21 +20,24 @@ body { background: #777; font-family: '{body_font}', 'DejaVu Sans', sans-serif; 
 .slide h1, .slide h2 { font-family: '{heading_font}', 'DejaVu Sans', sans-serif; letter-spacing: -0.02em; }
 .slide h1 { font-size: 92px; line-height: 1.04; font-weight: 800; }
 .slide h2 { font-size: 66px; line-height: 1.1; font-weight: 800; margin-bottom: 40px; }
-.slide p { font-size: 38px; line-height: 1.42; font-weight: 400; opacity: .92; }
+.slide p { font-size: 38px; line-height: 1.42; font-weight: 400; opacity: .92; white-space: pre-line; }
+.slide p + p { margin-top: 24px; }
+.note { font-size: 28px !important; line-height: 1.35 !important; opacity: .8 !important; margin-top: 30px;
+  padding-top: 18px; border-top: 2px solid rgba(127,127,127,.35); }
 .slide ul { list-style: none; }
 .slide li { font-size: 37px; line-height: 1.35; padding: 22px 0 22px 58px; position: relative;
   border-bottom: 2px solid rgba(127,127,127,.25); }
 .slide li::before { content: ''; position: absolute; left: 0; top: 36px; width: 26px; height: 26px;
   border-radius: 50%; background: {accent}; }
 .hl { color: {accent}; }
-.stat { font-family: '{heading_font}', sans-serif; font-size: 170px; font-weight: 800; color: {accent};
+.stat-figure { font-family: '{heading_font}', sans-serif; font-size: 170px; font-weight: 800; color: {accent};
   line-height: 1; margin-bottom: 36px; word-break: break-word; }
 .bar { position: absolute; left: 96px; top: 84px; width: 120px; height: 10px; background: {accent}; }
 .counter { position: absolute; right: 96px; top: 70px; font-size: 28px; opacity: .6; font-weight: 600; }
 .brand { position: absolute; left: 96px; bottom: 70px; font-size: 28px; font-weight: 700; letter-spacing: .08em;
   text-transform: uppercase; opacity: .75; }
 .swipe { position: absolute; right: 96px; bottom: 70px; font-size: 28px; font-weight: 600; color: {accent}; }
-.cover h1 { margin-top: 40px; }
+.layout-cover h1 { margin-top: 40px; }
 .cta-box { margin-top: 50px; background: {accent}; color: {primary}; padding: 34px 44px; border-radius: 18px;
   font-size: 38px; font-weight: 700; line-height: 1.3; }
 """
@@ -47,31 +51,60 @@ def _hl(text: str, highlight: str) -> str:
     return safe
 
 
+NOTE_SPLIT = re.compile(r"(?:^|\s)\*(?=[A-Z])")
+
+
+def _split_notes(text: str) -> tuple[str, list[str]]:
+    """Separates footnotes (lines/segments starting with '*') from the main text."""
+    main, notes = [], []
+    for line in text.split("\n"):
+        parts = NOTE_SPLIT.split(line)
+        if line.lstrip().startswith("*") and len(parts) > 1 and not parts[0].strip():
+            parts = parts[1:]
+            notes += [p.strip() for p in parts if p.strip()]
+            continue
+        main.append(parts[0].rstrip())
+        notes += [p.strip() for p in parts[1:] if p.strip()]
+    return "\n".join(main).strip(), notes
+
+
+def _notes_html(notes: list[str]) -> str:
+    return "".join(f'<p class="note">*{html.escape(n)}</p>' for n in notes)
+
+
 def _slide_html(slide: dict, design: dict, total: int, theme: str, brand_name: str, cta: str) -> str:
     n, layout = slide["n"], design.get("layout", "statement")
     hl = design.get("highlight", "")
-    head, body = slide["headline"], slide["body"]
-    # Alternate themes for rhythm: cover/cta use the carousel theme, inner slides alternate.
-    cls = theme if layout in ("cover", "cta") or n % 2 == 1 else ("light" if theme == "dark" else "dark")
+    head = slide["headline"]
+    body, notes = _split_notes(slide["body"].strip())
+    cls = theme if theme in ("dark", "light") else "dark"   # the Designer's theme applies to every slide
     chrome = (f'<div class="bar"></div><div class="counter">{n}/{total}</div>'
               f'<div class="brand">{html.escape(brand_name)}</div>')
     if n < total:
         chrome += '<div class="swipe">Swipe &rarr;</div>'
 
     if layout == "cover":
-        inner = f'<h1>{_hl(head, hl)}</h1><p style="margin-top:40px">{_hl(body, hl)}</p>'
+        inner = f'<h1>{_hl(head, hl)}</h1><p style="margin-top:40px">{_hl(body, hl)}</p>{_notes_html(notes)}'
     elif layout == "list":
-        items = [b.strip() for b in (design.get("bullets") or "").split("|") if b.strip()]
-        if not items:
-            items = [s.strip() for s in body.replace("•", "\n").split("\n") if s.strip()] or [body]
-        inner = f'<h2>{_hl(head, hl)}</h2><ul>' + "".join(f"<li>{_hl(i, hl)}</li>" for i in items) + "</ul>"
+        raw = [b.strip() for b in (design.get("bullets") or "").split("|") if b.strip()]
+        if not raw:
+            raw = [s.strip(" •-") for s in body.split("\n") if s.strip()] or [body]
+        intro = [b for b in raw if b.endswith(":")]
+        items = [b for b in raw if not b.endswith(":") and not b.startswith("*")]
+        notes += [b.lstrip("*").strip() for b in raw if b.startswith("*") and b.lstrip("*").strip() not in notes]
+        inner = (f'<h2>{_hl(head, hl)}</h2>' + "".join(f"<p>{html.escape(i)}</p>" for i in intro)
+                 + "<ul>" + "".join(f"<li>{_hl(i, hl)}</li>" for i in items) + "</ul>" + _notes_html(notes))
     elif layout == "stat" and hl and (hl in head or hl in body):
-        inner = f'<div class="stat">{html.escape(hl)}</div><h2>{html.escape(head)}</h2><p>{html.escape(body)}</p>'
+        # The figure is followed immediately by its qualifying note (e.g. date / "hypothetical").
+        inner = (f'<div class="stat-figure">{html.escape(hl)}</div>{_notes_html(notes)}'
+                 f'<h2>{html.escape(head)}</h2><p>{html.escape(body)}</p>')
     elif layout == "cta":
-        inner = f'<h2>{_hl(head, hl)}</h2><p>{_hl(body, hl)}</p><div class="cta-box">{html.escape(cta)}</div>'
+        show_box = cta and cta not in body and cta not in head
+        inner = (f'<h2>{_hl(head, hl)}</h2><p>{_hl(body, hl)}</p>{_notes_html(notes)}'
+                 + (f'<div class="cta-box">{html.escape(cta)}</div>' if show_box else ""))
     else:
-        inner = f'<h2>{_hl(head, hl)}</h2><p>{_hl(body, hl)}</p>'
-    return f'<section class="slide {cls} {layout}" id="slide-{n}">{chrome}<div>{inner}</div></section>'
+        inner = f'<h2>{_hl(head, hl)}</h2><p>{_hl(body, hl)}</p>{_notes_html(notes)}'
+    return f'<section class="slide {cls} layout-{layout}" id="slide-{n}">{chrome}<div>{inner}</div></section>'
 
 
 def render_carousel(carousel: dict, design: dict, brand: dict, brand_name: str, out_dir: Path) -> list[Path]:

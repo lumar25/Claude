@@ -1,0 +1,154 @@
+{
+  "topic_id": "T1",
+  "title": "SBA 7(a) loans explained: who lends, who guarantees, and how it works",
+  "slides": [
+    {
+      "n": 1,
+      "role": "hook",
+      "headline": "The SBA doesn't lend you the money",
+      "body": "So who does? Here's how SBA 7(a) loans actually work: who lends, who guarantees and who repays.\n\nSwipe for a plain-English breakdown."
+    },
+    {
+      "n": 2,
+      "role": "content",
+      "headline": "What is an SBA 7(a) loan?",
+      "body": "The Small Business Administration (SBA) is a federal agency. It calls 7(a) its primary business loan program. The name comes from the section of federal law that created it.\n\nMost 7(a) loans: up to $5 million*\n\n*Per sba.gov; as of Oct. 11, 2026, subject to change."
+    },
+    {
+      "n": 3,
+      "role": "content",
+      "headline": "Three roles: lender, SBA, borrower",
+      "body": "Lender: reviews your application, makes the decision and funds the loan.\n\nSBA: guarantees part of the loan. If the borrower defaults, the SBA covers part of the lender's loss.\n\nBorrower: repays the lender."
+    },
+    {
+      "n": 4,
+      "role": "content",
+      "headline": "Common uses of 7(a) loans",
+      "body": "• Working capital (money for day-to-day operations)\n• Equipment\n• Real estate\n• Refinancing business debt\n• Buying an existing business, including a franchise business (subject to eligibility)"
+    },
+    {
+      "n": 5,
+      "role": "content",
+      "headline": "The process, at a high level",
+      "body": "1. Prepare your documents\n2. Find a lender that offers SBA loans\n3. Apply\n4. Underwriting (the lender's review of your finances and risk)\n5. Decision\n6. Closing and funding\n\nSteps vary by lender. The SBA may also review some loans."
+    },
+    {
+      "n": 6,
+      "role": "content",
+      "headline": "Myth #2: The guarantee protects you",
+      "body": "MYTH: The SBA guarantee protects the borrower.\n\nREALITY: It protects the lender. You still owe the full amount. Owners are commonly required to sign a personal guarantee, a promise to repay personally if the business can't."
+    },
+    {
+      "n": 7,
+      "role": "cta",
+      "headline": "Want to understand your options?",
+      "body": "Have questions about financing your business? Send us a DM.\n\nNext up: what lenders commonly look at."
+    }
+  ],
+  "caption": "Many people think getting an SBA loan means applying to the government. You actually apply through a lender, and the SBA guarantees part of the loan to that lender.\n\nA few more points worth knowing:\n\n• Basic eligibility generally includes operating for profit, being \"small\" under SBA size standards, and passing the \"credit elsewhere\" test. That test means credit isn't reasonably available elsewhere on reasonable commercial terms.\n\n• Who makes the call? Some lenders make the final credit decision under authority the SBA delegates to them. For other loans, the SBA also reviews the loan. Either way, your application goes through the lender.\n\n• The rules get updated. The SBA's lending rulebook (SOP 50 10 8.1) applies to loans that receive SBA loan numbers on or after October 1, 2026. Always check the current rules before relying on any figure.\n\nSave this post for later, and share it with someone who's exploring business financing. 📌\n\nHave questions about financing your business? Send us a DM.\n\nThis content is for educational purposes only and is not financial, legal or tax advice. Loan programs, terms and eligibility are subject to change and lender approval.",
+  "hashtags": [
+    "#SBALoans",
+    "#SmallBusinessFinancing",
+    "#BusinessLoans",
+    "#SmallBusinessOwner",
+    "#FranchiseFinancing",
+    "#BusinessAcquisition",
+    "#Entrepreneurship"
+  ],
+  "cta": "Have questions about financing your business? Send us a DM.",
+  "fact_refs": [
+    {
+      "slide": 1,
+      "claim": "The SBA doesn't lend the money directly. You apply through a lender, and the SBA guarantees part of the loan.",
+      "source_ids": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "slide": 2,
+      "claim": "The SBA calls 7(a) its primary business loan program.",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "slide": 2,
+      "claim": "Most 7(a) loans have a maximum of $5 million (per sba.gov, as of Oct. 11, 2026, subject to change). The 7(a) portion stays at up to $5 million even under the $10M combined 7(a)+504 limit.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S10"
+      ]
+    },
+    {
+      "slide": 3,
+      "claim": "The lender makes the decision and funds the loan, and the SBA provides a loan guarantee to the lender.",
+      "source_ids": [
+        "S1",
+        "S3",
+        "S23"
+      ]
+    },
+    {
+      "slide": 3,
+      "claim": "The borrower repays the lender and remains obligated for the full amount.",
+      "source_ids": [
+        "S23"
+      ]
+    },
+    {
+      "slide": 4,
+      "claim": "Uses include working capital, equipment, real estate, refinancing business debt and changes of ownership (buying an existing business).",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "slide": 5,
+      "claim": "Depending on the lender, the SBA may review the loan, or the lender may decide under delegated authority.",
+      "source_ids": [
+        "S23"
+      ]
+    },
+    {
+      "slide": 6,
+      "claim": "The guarantee covers the lender. The borrower remains obligated for the full amount due.",
+      "source_ids": [
+        "S23",
+        "S3"
+      ]
+    },
+    {
+      "slide": 6,
+      "claim": "Owners are commonly required to sign a personal guarantee (general wording, threshold left out).",
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "slide": 0,
+      "claim": "Caption: eligibility includes operating for profit, being small under SBA size standards, and the credit elsewhere test.",
+      "source_ids": [
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "slide": 0,
+      "claim": "Caption: delegated lenders (PLP) make the final credit decision. Other loans are reviewed by the SBA.",
+      "source_ids": [
+        "S23"
+      ]
+    },
+    {
+      "slide": 0,
+      "claim": "Caption: SOP 50 10 8.1 applies to loans receiving SBA loan numbers on or after Oct 1, 2026.",
+      "source_ids": [
+        "S6",
+        "S7"
+      ]
+    }
+  ]
+}

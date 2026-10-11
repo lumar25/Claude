@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
-deliverables/*/*/_work/
+deliverables/*/*/_work/*
+!deliverables/*/*/_work/research.json
 .venv/
 .env

@@ -145,6 +145,7 @@ class Workflow:
                 self.store.add_source(run_id, client.client_id, src, verified=True)
             for src in source_report["rejected"]:
                 self.store.add_source(run_id, client.client_id, src, verified=False)
+            (work / "research.json").write_text(_j({"research": research, "source_report": source_report}))
             if not any(t["verified_facts"] for t in research["topics"]):
                 raise TaskError("research produced no verified facts; stopping instead of writing unsupported content")
 
@@ -167,16 +168,8 @@ class Workflow:
                 pngs, overflow = await asyncio.to_thread(self._render, client, copy, design, out)
 
                 # T6 Supervisor (looks at the actual PNGs with the Read tool)
-                image_list = "\n".join(f"- {p}" for ps in pngs.values() for p in ps)
-                review = (await self._task(run_id, review_tid, "supervisor",
-                          f"# DIRECTOR BRIEF\n{d['brief']}\n\n# YOUR ASSIGNMENT\n{d['assignments']['AG-006']}\n\n"
-                          f"Requested carousels: {count}, slides each: {d['slides_per_carousel']}\n\n"
-                          f"# VERIFIED RESEARCH\n{_j(research)}\n\n# COPY\n{_j(copy['carousels'])}\n\n# DESIGN SPEC\n{_j(design)}\n\n"
-                          f"# RENDERED SLIDE IMAGES (open them with Read)\n{image_list}\n\n"
-                          f"# AUTOMATED CHECKS\n- Text overflow detected on slides: {_j(overflow)}\n"
-                          f"- Topic repetition warnings: {_j(repeat_warnings)}\n- Sources rejected as unverifiable: {len(source_report['rejected'])}\n"
-                          f"- Facts dropped for lacking verified sources: {_j(source_report['dropped_facts'])}\n\n{ctx}",
-                          work, readable_dirs=[out])).output
+                review = await self._supervise(run_id, review_tid, client, d, research, copy, design, pngs, overflow,
+                                               repeat_warnings, source_report, out)
 
                 blocking = [i for i in review["issues"] if i["blocking"]]
                 if review["verdict"] == "approved" and not blocking:
@@ -208,6 +201,63 @@ class Workflow:
             log.exception("unexpected error")
             self._fail(run_id, f"{type(e).__name__}: {e}")
         return run_id
+
+    async def rereview(self, client: Client, run_id: str) -> str:
+        """Re-renders a finished run's final copy/design (e.g. after a renderer or brand-kit fix)
+        and has the Quality Supervisor review it again as a new, real task."""
+        run = self.store.get_run(run_id)
+        if not run or run["status"] not in ("pending_approval", "rejected"):
+            raise SystemExit(f"run {run_id} is not a finished, unapproved run")
+        out = Path(run["deliverable_dir"])
+        self.runner = AgentRunner(self.settings.path("logs") / "runs" / f"{run_id}.jsonl")
+        done = [t for t in self.store.tasks_for_run(run_id) if t["status"] == "completed"]
+        last = lambda agent: json.loads([t for t in done if t["agent_id"] == agent][-1]["output_json"])  # noqa: E731
+        d, topics_all = last("AG-001"), last("AG-003")["topics"]
+        copy, design = last("AG-004"), last("AG-005")
+        topics = [t for t in topics_all if t["topic_id"] in {c["topic_id"] for c in copy["carousels"]}]
+        if (out / "_work" / "research.json").exists():
+            research, source_report = json.loads((out / "_work" / "research.json").read_text()).values()
+        else:  # runs made before research.json existed: rebuild from the stored source verification
+            research = last("AG-002")
+            rows = self.store.db.execute("SELECT source_ref, verified, url FROM sources WHERE run_id=?", (run_id,)).fetchall()
+            ok = {r["source_ref"] for r in rows if r["verified"]}
+            research["sources"] = [s for s in research["sources"] if s["id"] in ok]
+            source_report = {"rejected": [{"url": r["url"]} for r in rows if not r["verified"]], "dropped_facts": []}
+
+        n = sum(1 for t in self.store.tasks_for_run(run_id) if "-R" in t["id"]) + 1
+        review_tid = f"{run_id}-R{n}"
+        self.store.create_task(review_tid, run_id, 100 + n, self.agents["supervisor"].id,
+                               f"Re-review after re-render #{n}", [])
+        self.store.update_run(run_id, status="running")
+        log.info("RE-REVIEW %s (#%d)", run_id, n)
+        try:
+            pngs, overflow = await asyncio.to_thread(self._render, client, copy, design, out)
+            review = await self._supervise(run_id, review_tid, client, d, research, copy, design, pngs, overflow, [],
+                                           source_report, out)
+            self._package(client, run_id, run["request"], d, topics, research, source_report, copy, design, review, pngs, out)
+            self.store.update_run(run_id, status="pending_approval")
+            log.info("RE-REVIEW %s done: verdict %s | run total $%.3f", run_id, review["verdict"], self.store.spent_run(run_id))
+        except (TaskError, BudgetExceeded) as e:
+            self.store.update_run(run_id, status="pending_approval", error=f"re-review failed: {e}")
+            log.error("re-review failed: %s (previous package left unchanged)", e)
+        return run_id
+
+    async def _supervise(self, run_id, task_id, client, d, research, copy, design, pngs, overflow, repeat_warnings,
+                         source_report, out: Path) -> dict:
+        image_list = "\n".join(f"- {p}" for ps in pngs.values() for p in ps)
+        ctx = f"# CLIENT PROFILE\n{client.profile_text()}\n\n# CLIENT KNOWLEDGE BASE\n{client.knowledge_text()}"
+        return (await self._task(run_id, task_id, "supervisor",
+                f"# DIRECTOR BRIEF\n{d['brief']}\n\n# YOUR ASSIGNMENT\n{d['assignments']['AG-006']}\n\n"
+                f"Requested carousels: {min(int(d['deliverable_count']), self.settings.max_deliverables)}, "
+                f"slides each: {d['slides_per_carousel']}\n\n"
+                f"# VERIFIED RESEARCH\n{_j(research)}\n\n# COPY\n{_j(copy['carousels'])}\n\n# DESIGN SPEC\n{_j(design)}\n\n"
+                f"# RENDERER CAPABILITIES\nThe renderer draws text, bullets, one highlight, footnotes and a CTA button only; "
+                f"icons, cards, timelines and logos are not supported and are not expected.\n\n"
+                f"# RENDERED SLIDE IMAGES (open them with Read)\n{image_list}\n\n"
+                f"# AUTOMATED CHECKS\n- Text overflow detected on slides: {_j(overflow)}\n"
+                f"- Topic repetition warnings: {_j(repeat_warnings)}\n- Sources rejected as unverifiable: {len(source_report['rejected'])}\n"
+                f"- Facts dropped for lacking verified sources: {_j(source_report['dropped_facts'])}\n\n{ctx}",
+                out / "_work", readable_dirs=[out])).output
 
     def _fail(self, run_id: str, error: str) -> None:
         for t in self.store.tasks_for_run(run_id):
