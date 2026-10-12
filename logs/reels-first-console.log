@@ -1,0 +1,101 @@
+11:12:35 INFO    REELS RUN 20261012-081235-reels-ecbc | 2026-10-12 | 20 scripts | cap $14.00
+11:12:35 INFO    [T1] AG-001 Creative Director — Daily brief + weekly review
+11:13:21 INFO         done: $0.122, 2 turns, 0 tool calls
+11:13:21 INFO    [T2] AG-002 Research Specialist — Research recent TikTok/Instagram reference videos
+11:13:25 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"SBA loan\" business"}
+11:13:25 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"buy a business\" SBA"}
+11:13:26 INFO        AG-002 -> WebSearch {"query": "site:instagram.com/reel SBA loan"}
+11:13:26 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com franchise financing"}
+11:13:43 INFO        AG-002 -> WebSearch {"query": "tiktok.com/@ video \"SBA 7(a)\" acquisition buyabusiness"}
+11:13:44 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"seller financing\" buy a business video"}
+11:13:44 INFO        AG-002 -> WebSearch {"query": "site:instagram.com reel \"buy a business\" SBA"}
+11:13:45 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"franchise\" \"SBA\" #franchiseowner video"}
+11:13:54 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com/@ \"sbaloans\" video 2026"}
+11:13:54 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"equity injection\" SBA"}
+11:13:55 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"DSCR\" business acquisition loan"}
+11:13:55 INFO        AG-002 -> WebSearch {"query": "site:instagram.com/reel \"SBA\" franchise financing"}
+11:14:05 INFO        AG-002 -> WebSearch {"query": "instagram.com/reel buying a business SBA loan down payment"}
+11:14:06 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"SBA\" \"buy a franchise\" video"}
+11:14:06 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"SBA loan\" mistakes lenders look at"}
+11:14:07 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"business acquisition\" \"SBA\" #etasearch"}
+11:14:18 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com/@loanbud SBA"}
+11:14:19 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com/@owneractions SBA loan"}
+11:14:19 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"SBA 7a\" \"seller note\" video"}
+11:14:20 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"franchise\" \"liquid capital\" \"net worth\" lenders video"}
+11:14:33 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"buy a business\" \"SBA\" \"down\" video owner cash flow"}
+11:14:33 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"Franchise Disclosure Document\" FDD video"}
+11:14:33 INFO        AG-002 -> WebSearch {"query": "SBA SOP 50 10 8 effective June 1 2025 equity injection seller note standby full term citizenship March 1 2026"}
+11:14:45 INFO        AG-002 -> WebFetch {"url": "https://www.sba.gov/funding-programs/loans/7a-loans", "prompt": "List all 7(a) loan types with max loan amounts, guaranty percentages, interest rate ma
+11:14:46 INFO        AG-002 -> WebFetch {"url": "https://www.sba.gov/funding-programs/loans/504-loans", "prompt": "Max loan amounts, uses of proceeds, terms (10/20/25 years), eligibility (net worth, n
+11:14:46 INFO        AG-002 -> WebFetch {"url": "https://www.sba.gov/funding-programs/loans/microloans", "prompt": "Max microloan amount, average amount, max term, rate range, uses and prohibited uses
+11:14:50 INFO        AG-002 -> WebFetch {"url": "https://www.ecfr.gov/current/title-13/chapter-I/part-120/subpart-B/subject-group-ECFR3d7a6a8e1f8e0e9/section-120.151", "prompt": "What is the maximum 7
+11:14:51 INFO        AG-002 -> WebFetch {"url": "https://www.ftc.gov/business-guidance/resources/franchise-rule-compliance-guide", "prompt": "When must the FDD be provided (14 calendar days)? How many
+11:14:52 INFO        AG-002 -> WebSearch {"query": "sba.gov 7(a) loans types maximum loan amount guaranty 85% 75% SBA Express $500,000 50%"}
+11:15:03 INFO        AG-002 -> WebSearch {"query": "SBA 7(a) upfront guaranty fee fiscal year 2026 information notice fees loans $150,000 or less"}
+11:15:03 INFO        AG-002 -> WebSearch {"query": "SBA procedural notice citizenship 7(a) 504 100% U.S. citizens effective March 1 2026 lawful permanent residents"}
+11:15:04 INFO        AG-002 -> WebSearch {"query": "SBA franchise directory reinstated SOP 50 10 8 personal guaranty 20% owners"}
+11:15:04 INFO        AG-002 -> WebSearch {"query": "FTC Franchise Rule FDD 14 calendar days before signing 23 items ftc.gov buying a franchise consumer guide"}
+11:15:14 INFO        AG-002 -> WebSearch {"query": "SBA 7(a) fees fiscal year 2027 information notice effective October 1, 2026"}
+11:15:15 INFO        AG-002 -> WebSearch {"query": "SBA microloan maximum $50,000 term 504 loan maximum $5.5 million SBA Express guaranty 50% sba.gov"}
+11:15:15 INFO        AG-002 -> WebSearch {"query": "Instagram creators best practices Reels hook first seconds on-screen text captions official Meta creators"}
+11:15:16 INFO        AG-002 -> WebSearch {"query": "TikTok Creative Center / TikTok for Business creative best practices hook first 3 seconds video length captions"}
+11:15:30 INFO        AG-002 -> WebSearch {"query": "SBA SOP 50 10 8 technical update 2026 OR \"SOP 50 10 9\" changes 7(a) lenders"}
+11:15:30 INFO        AG-002 -> WebSearch {"query": "creators.instagram.com OR about.instagram.com Reels tips original content text captions how ranking works"}
+11:15:30 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"SBA\" \"franchise\" video @ franchise financing explained"}
+11:15:44 INFO        AG-002 -> WebSearch {"query": "SOP 50 10 8.1 equity injection seller note standby change of ownership partial change personal guaranty franchise directory"}
+11:15:45 INFO        AG-002 -> WebFetch {"url": "https://creators.instagram.com/blog/tips-for-improving-your-reach", "prompt": "Summarize Instagram's official tips for Reels reach: length limits, orig
+11:15:57 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"#buyabusiness\" SBA lender video"}
+11:15:57 INFO        AG-002 -> WebSearch {"query": "site:tiktok.com \"#sbaloan\" \"small business\" loan tips video"}
+11:17:56 INFO         done: $1.759, 46 turns, 44 tool calls
+11:17:56 INFO         references: 9 kept (72h: 0, 7d: 0, 30d: 0), 0 rejected
+11:17:56 INFO    [T3] AG-003 Content Strategist — Select 20 varied, non-repetitive topics
+11:20:00 INFO         done: $0.358, 2 turns, 0 tool calls
+11:20:00 INFO    [T4] AG-002 Research Specialist — Verify financial claims with primary sources
+11:20:09 INFO        AG-002 -> WebFetch {"url": "https://www.sba.gov/funding-programs/loans/7a-loans", "prompt": "Give the exact text on: what 7(a) is, who makes the loans, max loan amount, guaranty p
+11:20:09 INFO        AG-002 -> WebSearch {"query": "SOP 50 10 8 effective date equity injection 10% seller note standby change of ownership"}
+11:20:19 INFO        AG-002 -> WebSearch {"query": "SOP 50 10 8.1 SBA effective date changes"}
+11:20:20 INFO        AG-002 -> WebFetch {"url": "https://jakenfinancegroup.com/blog/sba-sop-50-10-8-1-october-2026-changes/", "prompt": "What is SOP 50 10 8.1, its effective date, and what changed (eq
+11:20:32 INFO        AG-002 -> WebFetch {"url": "https://www.naggl.org/sop-update-sba-publishes-sop-50-10-8-1-with-technical-policy-updates/", "prompt": "List all specifics: effective date, equity inj
+11:20:33 INFO        AG-002 -> WebFetch {"url": "https://colemanreport.com/this-just-in-sba-releases-sop-50-10-8-1-effective-october-1-2026/", "prompt": "List all specifics: effective date, equity inj
+11:20:38 INFO        AG-002 -> WebSearch {"query": "SOP 50 10 8.1 equity injection change of ownership seller note standby percentage October 1 2026"}
+11:20:39 INFO        AG-002 -> WebSearch {"query": "SOP 50 10 8.1 business valuation threshold quality of earnings $250,000 change of ownership"}
+11:20:50 INFO        AG-002 -> WebSearch {"query": "SOP 50 10 8.1 lender and development company loan programs", "allowed_domains": ["sba.gov"]}
+11:20:50 INFO        AG-002 -> WebSearch {"query": "SBA 7(a) loans maximum $5 million guaranty 85% 75% lenders", "allowed_domains": ["sba.gov"]}
+11:21:07 INFO        AG-002 -> WebFetch {"url": "https://legacy.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility", "prompt": "Quote text on: eligibility (for-profit, US, size stan
+11:21:07 INFO        AG-002 -> WebFetch {"url": "https://legacy.sba.gov/document/information-notice-5000-880695-issuance-sop-50-10-81", "prompt": "Quote the effective date and a summary of the key pol
+11:21:19 INFO        AG-002 -> WebSearch {"query": "7(a) terms conditions eligibility maximum term 25 years real estate 10 years equipment working capital for-profit size standards", "allowed_domains":
+11:21:19 INFO        AG-002 -> WebSearch {"query": "504 loans CDC fixed assets cannot be used for working capital inventory 50% lender 40% CDC 10% borrower", "allowed_domains": ["sba.gov"]}
+11:21:31 INFO        AG-002 -> WebSearch {"query": "SBA doubles cumulative 7(a) and 504 loan limit $10 million May 2026"}
+11:21:32 INFO        AG-002 -> WebSearch {"query": "SBA Express maximum $500,000 50% guaranty CAPLines working capital $5 million", "allowed_domains": ["sba.gov"]}
+11:21:40 INFO        AG-002 -> WebSearch {"query": "16 CFR 436.5 Item 5 initial fees Item 7 estimated initial investment additional funds initial period Item 19 financial performance representations"}
+11:21:40 INFO        AG-002 -> WebSearch {"query": "SBA Franchise Directory reinstated SOP 50 10 8 brand eligibility"}
+11:21:55 INFO        AG-002 -> WebSearch {"query": "SBA Franchise Directory 2026", "allowed_domains": ["sba.gov"]}
+11:21:56 INFO        AG-002 -> WebSearch {"query": "SBA Form 1919 Form 413 personal financial statement Form 4506-C borrower information form current", "allowed_domains": ["sba.gov"]}
+11:22:07 INFO        AG-002 -> WebSearch {"query": "SBA 7(a) personal guaranty owners 20% or more required SOP 50 10 8.1"}
+11:22:07 INFO        AG-002 -> WebSearch {"query": "SOP 50 10 8 IRS Form 4506-C tax transcript verification lender must obtain prior to disbursement"}
+11:22:19 INFO        AG-002 -> WebSearch {"query": "13 CFR 120.150 loan-making factors character reputation credit history experience depth of management repayment ability"}
+11:22:20 INFO        AG-002 -> WebSearch {"query": "SOP 50 10 8 debt service coverage minimum 1.15 7(a) historical or projected; 8.1 change of ownership 1.25 historical"}
+11:22:34 INFO        AG-002 -> WebSearch {"query": "SOP 50 10 8 start-up equity injection 10% gifts documentation verified source cash injection bank statements"}
+11:22:34 INFO        AG-002 -> WebSearch {"query": "SBA FICO SBSS minimum score 165 7(a) small loans 2026"}
+11:22:47 INFO        AG-002 -> WebSearch {"query": "Procedural Notice 5000-875701 SBSS 7(a) small loans", "allowed_domains": ["sba.gov"]}
+11:22:47 INFO        AG-002 -> WebSearch {"query": "Preferred Lenders Program PLP delegated authority lender makes credit decision without SBA review", "allowed_domains": ["sba.gov"]}
+11:23:04 INFO        AG-002 -> WebSearch {"query": "Procedural Notice 5000-872050 citizenship residency 100% owned U.S. citizens nationals lawful permanent residents effective date"}
+11:23:04 INFO        AG-002 -> WebSearch {"query": "SBA franchise loan lender reviews Franchise Disclosure Document underwriting liquidity experience projections"}
+11:23:05 INFO        AG-002 -> WebSearch {"query": "SBA 7(a) change of ownership goodwill intangible assets valuation tax returns add-backs lender verification SOP 50 10"}
+11:23:19 INFO        AG-002 -> WebSearch {"query": "PilieroMazza SOP 50 10 8.1 seller note standby equity injection start-up 10% maturity change of ownership"}
+11:25:44 INFO         done: $1.529, 34 turns, 32 tool calls
+11:25:44 INFO         fact sources: 24 kept, 0 rejected; claims verified: 54/66
+11:25:44 INFO    [T5a] AG-004 Copywriter — Write scripts batch 1
+11:25:44 INFO    [T5b] AG-004 Copywriter — Write scripts batch 2
+11:25:44 INFO    [T5c] AG-004 Copywriter — Write scripts batch 3
+11:25:44 INFO    [T5d] AG-004 Copywriter — Write scripts batch 4
+11:27:23 INFO         done: $0.400, 2 turns, 0 tool calls
+11:27:26 INFO         done: $0.384, 2 turns, 0 tool calls
+11:27:53 INFO         done: $0.471, 2 turns, 0 tool calls
+11:29:01 INFO         done: $0.625, 2 turns, 0 tool calls
+11:29:01 INFO    [T6] AG-006 Quality Supervisor — QA all scripts, rank top 5
+11:31:33 INFO         done: $0.895, 2 turns, 0 tool calls
+11:31:33 INFO    REELS RUN 20261012-081235-reels-ecbc finished | total $6.542 | /home/user/Claude/deliverables/livetrust-financial/reels/2026-10-12
+
+Run 20261012-081235-reels-ecbc: pending_approval
+Delivery: /home/user/Claude/deliverables/livetrust-financial/reels/2026-10-12/entrega.md

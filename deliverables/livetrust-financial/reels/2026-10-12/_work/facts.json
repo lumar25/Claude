@@ -1,0 +1,876 @@
+{
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.sba.gov/funding-programs/loans/7a-loans",
+      "title": "7(a) loans - Small Business Administration",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: Most 7(a) loans have a maximum loan amount of $5 million. SBA guarantees up to 85% of loans of $150,000 or less and up to 75% of loans above $150,000; maximum SBA exposure $3.75 million; SBA Express and Export Express max $500,000. (WebFetch blocked by proxy; snippet only.)"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility",
+      "title": "Terms, conditions, and eligibility (7(a) loan program)",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: Term is the shortest appropriate term based on ability to repay, typically 10 years or less unless financing real estate/equipment with useful life over 10 years, maximum 25 years. Uses: real estate; short- and long-term working capital; refinancing current business debt; machinery and equipment; furniture, fixtures, supplies; changes of ownership (complete or partial). Eligibility: operating business, operate for profit, located in the U.S., small under SBA size requirements, not an ineligible business, unable to obtain desired credit on reasonable terms from non-Federal, non-State, non-local government sources, creditworthy with reasonable ability to repay."
+    },
+    {
+      "id": "S3",
+      "url": "https://www.sba.gov/partners/lenders/7a-loan-program/types-7a-loans",
+      "title": "Types of 7(a) loans",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: SBA Express max $500,000, max SBA guaranty 50%; revolving lines permitted up to 10 years. CAPLines helps meet short-term and cyclical working-capital needs, lines up to $5 million. PLP lenders process, close, service and liquidate most SBA guaranteed loans without prior SBA review, subject to a brief eligibility review and SBA loan number; SBA eligibility requirements, credit policy and procedures still apply to PLP loans."
+    },
+    {
+      "id": "S4",
+      "url": "https://legacy.sba.gov/document/information-notice-5000-880695-issuance-sop-50-10-81",
+      "title": "Issuance of SOP 50 10 8.1 (Information Notice 5000-880695)",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: Notice informs 7(a) Lenders, CDCs, SBA employees, Applicants and Borrowers of issuance of SOP 50 10 8.1, Lender and Development Company Loan Programs; version 8.1 with Technical Updates effective October 1, 2026. Crosswalk reference dated August 31, 2026."
+    },
+    {
+      "id": "S5",
+      "url": "https://www.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
+      "title": "SOP 50 10 Lender and Development Company Loan Programs",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: SOP 50 10 contains SBA's loan origination policies and procedures for the 7(a) and 504 programs. Section A: core requirements for all 7(a) and 504 loans; Section B: 7(a); Section C: 504."
+    },
+    {
+      "id": "S6",
+      "url": "https://www.sba.gov/funding-programs/loans/504-loans",
+      "title": "504 loans - Small Business Administration",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: 504 provides long-term, fixed-rate financing for major fixed assets that promote business growth and job creation (land, buildings, machinery, equipment). Structure: private-sector lender loan with senior lien covering up to 50% of project cost; CDC loan backed by 100% SBA-guaranteed debenture, junior lien, up to 40%; borrower contribution of at least 10% equity. 504 loans cannot be used for working capital or inventory."
+    },
+    {
+      "id": "S7",
+      "url": "https://legacy.sba.gov/article/2026/05/18/sba-doubles-cumulative-7a-504-loan-limit-10-million",
+      "title": "SBA Doubles Cumulative 7(a) and 504 Loan Limit to $10 Million",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: May 18, 2026 announcement: eligible borrowers may combine 7(a) and 504 loans for up to $10 million (up to $5 million via 7(a) and up to $5 million via 504), raising the cumulative limit from $5 million; effective July 4 (2026)."
+    },
+    {
+      "id": "S8",
+      "url": "https://www.sba.gov/document/support-sba-franchise-directory",
+      "title": "SBA Franchise Directory",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: Directory made available for Lenders/CDCs in evaluating eligibility of a small business operating under an agreement; contains franchises and other brands eligible for SBA financial assistance; most recent version last updated October 9, 2026; updated weekly. 'Placement of a franchise brand in the Directory is not an endorsement or approval of the brand and does not ensure the success of the business.'"
+    },
+    {
+      "id": "S9",
+      "url": "https://www.taftlaw.com/news-events/law-bulletins/sba-franchise-directory-reintroduced-effective-june-1-2025/",
+      "title": "SBA Franchise Directory Reintroduced Effective June 1, 2025",
+      "publisher": "Taft Stettinius & Hollister LLP",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: SOP 50 10 8 (effective June 1, 2025) reintroduced the SBA Franchise Directory for loans approved on or after June 1, 2025; franchisors had until July 31, 2025 to sign a new certification or be removed."
+    },
+    {
+      "id": "S10",
+      "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-436/subpart-C/section-436.5",
+      "title": "eCFR :: 16 CFR 436.5 -- Disclosure items",
+      "publisher": "eCFR / Federal Trade Commission rule",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: Item 5 Initial fees (fees/payments to franchisor or affiliate before the franchisee's business opens, and refund conditions). Item 7 Estimated initial investment, in tabular form, including when applicable initial franchise fee, training, real property, equipment, fixtures, construction/leasehold improvements, opening inventory, deposits, licenses, prepaid expenses, and 'Additional funds' for an initial period of operation. Item 19 Financial performance representations: if a franchisor makes any FPR, it must have a reasonable basis and written substantiation and state it in Item 19."
+    },
+    {
+      "id": "S11",
+      "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-436",
+      "title": "eCFR :: 16 CFR Part 436 -- Disclosure Requirements and Prohibitions Concerning Franchising",
+      "publisher": "eCFR / Federal Trade Commission rule",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search result: FTC Franchise Rule, 16 CFR Part 436, governs the franchise disclosure document; §436.5 lists the disclosure items (Items 1–23)."
+    },
+    {
+      "id": "S12",
+      "url": "https://www.sba.gov/document/sba-form-1919-borrower-information-form",
+      "title": "Borrower Information Form (SBA Form 1919)",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: Completed by small businesses applying for a 7(a) loan; collects information on the applicant and owners, loan request, existing indebtedness, government financing. Most current version listed as effective March 19, 2025."
+    },
+    {
+      "id": "S13",
+      "url": "https://www.sba.gov/document/sba-form-413-personal-financial-statement",
+      "title": "Personal Financial Statement (SBA Form 413)",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: Used to assess repayment ability and creditworthiness of applicants for 7(a), 504, disaster loans, and other programs; current version listed as effective February 13, 2025."
+    },
+    {
+      "id": "S14",
+      "url": "https://www.law.cornell.edu/cfr/text/13/120.150",
+      "title": "13 CFR § 120.150 - What are SBA's lending criteria?",
+      "publisher": "Legal Information Institute (Cornell) reproducing 13 CFR",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: Applicant must be creditworthy and loans so sound as to reasonably assure repayment. Factors: (a) character, reputation, credit history of applicant, Associates, guarantors; (b) experience and depth of management; (c) strength of the business; (d) past earnings, projected cash flow, future prospects; (e) ability to repay with earnings from the business; (f) sufficient invested equity; (g) potential for long-term success; (h) collateral (inadequate collateral not sole reason for denial); (i) effect of affiliates. Lenders must use prudent commercial credit analysis consistent with similarly sized non-SBA loans."
+    },
+    {
+      "id": "S15",
+      "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-120",
+      "title": "eCFR :: 13 CFR Part 120 -- Business Loans",
+      "publisher": "eCFR",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search result: 13 CFR Part 120 (Business Loans) contains SBA's business loan regulations, including credit criteria in §120.150."
+    },
+    {
+      "id": "S16",
+      "url": "https://www.pilieromazza.com/five-sba-7a-changes-that-could-reshape-business-acquisitions/",
+      "title": "Five SBA 7(a) Changes that Could Reshape Business Acquisitions",
+      "publisher": "PilieroMazza PLLC (law firm)",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: SOP 50 10 8.1 increases debt-service coverage for most change-of-ownership transactions from 1.15x to 1.25x; projections generally cannot make up for shortfall in historical cash flow. Qualifying seller notes, third-party notes and standby debt are considered together and shall not collectively represent more than half of the minimum equity injection; certain transactions (business expansions, partner buyouts) subject to minimum 10% equity injection."
+    },
+    {
+      "id": "S17",
+      "url": "https://starfieldsmith.com/2025/05/best-practices-a-review-of-equity-injection-requirements-under-sop-50-10-8/",
+      "title": "Best Practices: A Review of Equity Injection Requirements Under SOP 50 10 8",
+      "publisher": "Starfield & Smith (SBA lending consultancy)",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary (combined results): Under SOP 50 10 8 minimum equity injection is 10% for start-ups and complete changes of ownership; seller note may count only if on full standby for life of the SBA loan and not more than half of required injection; lenders must verify injection with documents such as checks, wire transfers, bank statements, settlement statements."
+    },
+    {
+      "id": "S18",
+      "url": "https://starfieldsmith.com/2024/03/best-practice-sba-requirements-for-irs-tax-transcripts/",
+      "title": "Best Practice: SBA Requirements for IRS Tax Transcripts",
+      "publisher": "Starfield & Smith",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary (combined results): Lenders verify applicant financial data against IRS tax transcripts via IVES using IRS Form 4506-C (made mandatory May 1, 2021 by SBA Notice); verification generally covers the past three years; if IRS does not respond within 10 business days lender may close but must follow up and resolve discrepancies."
+    },
+    {
+      "id": "S19",
+      "url": "https://legacy.sba.gov/document/procedural-notice-5000-875701-sunset-sbss-score-7a-small-loans",
+      "title": "Sunset of SBSS Score for 7(a) Small Loans (Procedural Notice 5000-875701)",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: Procedural Notice 5000-875701 'Sunset of SBSS Score for 7(a) Small Loans' (effective January 16, 2026); supplemental guidance PN 5000-876777 effective March 1, 2026. 7(a) Small Loans are term loans of $350,000 or less."
+    },
+    {
+      "id": "S20",
+      "url": "https://www.naggl.org/notice-further-revising-sba-loan-citizenship-and-residency-requirements/",
+      "title": "Notice Further Revising SBA Loan Citizenship and Residency Requirements",
+      "publisher": "NAGGL (National Association of Government Guaranteed Lenders)",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary (combined results): Under PN 5000-872050 (eff. Dec 19, 2025) 100% of direct/indirect owners must be U.S. Citizens, U.S. Nationals or LPRs with principal residence in the U.S.; effective March 1, 2026 the notice was rescinded, removing the narrow 5% exception."
+    },
+    {
+      "id": "S21",
+      "url": "https://bghvaluation.com/sba-sop-50-10-8-1-overview/",
+      "title": "SBA SOP 50 10 8.1 Overview: What's New for Valuations & QoE",
+      "publisher": "BGH Valuation (valuation firm)",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary (combined results): Prior SOP let lender do its own valuation if financed business value net of real estate and equipment was $250,000 or less; that exception does not appear in SOP 50 10 8.1, so every change of ownership requires an independent Qualified Source valuation. QoE report required for Initial Acquisition and Business Expansion where purchase price is $3 million or more."
+    },
+    {
+      "id": "S22",
+      "url": "https://colemanreport.com/this-just-in-sba-releases-sop-50-10-8-1-effective-october-1-2026/",
+      "title": "This Just In: SBA Releases SOP 50 10 8.1, Effective October 1, 2026",
+      "publisher": "Coleman Report",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary (combined results): SOP 50 10 8.1 effective for loans receiving SBA loan numbers on or after October 1, 2026; loans numbered on or before September 30 remain under SOP 50 10 8; supersedes an August 14, 2026 version that never took effect."
+    },
+    {
+      "id": "S23",
+      "url": "https://www.midbank.net/blog/sba-personal-guarantee-20-percent-owner-rule",
+      "title": "Who Has to Sign the SBA Personal Guarantee: The 20% Ownership Rule",
+      "publisher": "MidWestOne/Mid Bank blog (lender)",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary (combined results): Full, unlimited personal guaranty required from anyone with 20% or more direct or indirect ownership (spouse and minor children ownership combined)."
+    },
+    {
+      "id": "S24",
+      "url": "https://www.liveoak.bank/blog/navigating-the-sbas-new-sop-50-10-8",
+      "title": "SBA SOP 50 10 8: Key Updates",
+      "publisher": "Live Oak Bank",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search result on SOP 50 10 8 key updates (equity injection, tax transcript verification); used only as corroborating lender source."
+    }
+  ],
+  "claims": [
+    {
+      "script_id": "R01",
+      "claim": "SBA 7(a) loans are made by participating lenders, not directly by SBA",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S1",
+        "S3",
+        "S5"
+      ],
+      "correct_wording": "7(a) loans are made by participating private lenders (banks, credit unions and other SBA lenders). SBA guarantees part of the loan but does not lend the money directly. NOTE: WebFetch was blocked for every site during this task, so all findings rely on search snippets."
+    },
+    {
+      "script_id": "R01",
+      "claim": "SBA provides a partial guaranty; current guaranty percentages by loan size",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "correct_wording": "For most 7(a) loans, SBA guarantees up to 85% of loans of $150,000 or less and up to 75% of loans over $150,000. SBA Express has a maximum guaranty of 50%. Figures are from SBA.gov as of October 2026 and may change."
+    },
+    {
+      "script_id": "R01",
+      "claim": "The lender, not SBA, makes the credit decision under delegated or non-delegated processing",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S3",
+        "S14"
+      ],
+      "correct_wording": "The lender underwrites every 7(a) loan. Lenders with delegated authority (the Preferred Lenders Program, PLP) can approve loans without prior SBA review, but SBA's eligibility rules and credit policy still apply. For non-delegated loans, SBA also reviews the application before issuing the guaranty. Safe wording: 'The lender evaluates and approves the loan under SBA rules.' Do not say 'SBA never reviews loans.'"
+    },
+    {
+      "script_id": "R01",
+      "claim": "Approved framing language that avoids implying SBA endorsement of any advisor",
+      "claim_type": "general_preparation",
+      "verdict": "verified",
+      "source_ids": [
+        "S8"
+      ],
+      "correct_wording": "Suggested disclaimer: 'Livetrust is not affiliated with or endorsed by the U.S. Small Business Administration and is not a lender. All loan decisions are made by lenders under SBA program rules.' SBA's own Franchise Directory uses similar non-endorsement wording. This is drafting guidance, not legal advice; have compliance review it."
+    },
+    {
+      "script_id": "R02",
+      "claim": "Official definition of the SBA 7(a) program",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "correct_wording": "The 7(a) program is SBA's primary loan guarantee program. Participating lenders make the loans and SBA partially guarantees them. Proceeds can be used for a range of business purposes."
+    },
+    {
+      "script_id": "R02",
+      "claim": "Eligible uses of 7(a) proceeds",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S2",
+        "S5"
+      ],
+      "correct_wording": "Eligible 7(a) uses include buying, refinancing or improving real estate and buildings; short- and long-term working capital; refinancing current business debt; buying and installing machinery and equipment; furniture, fixtures and supplies; and complete or partial changes of ownership. SOP 50 10 8.1 has applied since Oct. 1, 2026."
+    },
+    {
+      "script_id": "R02",
+      "claim": "Current 7(a) maximum loan amount",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S1",
+        "S7"
+      ],
+      "correct_wording": "Most 7(a) loans are capped at $5 million, and SBA's guaranteed share is capped at $3.75 million. SBA Express is capped at $500,000. Since July 2026, eligible borrowers can combine up to $5M in 7(a) with up to $5M in 504, for up to $10M total. These are SBA.gov figures as of Oct. 2026 and may change."
+    },
+    {
+      "script_id": "R02",
+      "claim": "Basic eligibility: for-profit, U.S.-based, meets SBA size standards",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S2",
+        "S20"
+      ],
+      "correct_wording": "To be eligible, a business generally must be operating, for-profit and located in the U.S. It must be small under SBA size standards and not an ineligible business type. It must be unable to get the credit on reasonable terms elsewhere, and must be creditworthy and able to repay. Since 2026, SBA also requires 100% of owners to be U.S. citizens, U.S. nationals or lawful permanent residents living in the U.S. This citizenship point comes from a NAGGL summary, so check it against SOP 50 10 8.1 before publishing."
+    },
+    {
+      "script_id": "R03",
+      "claim": "504 purpose: long-term fixed assets via CDC + lender structure",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S6"
+      ],
+      "correct_wording": "The 504 program provides long-term, fixed-rate financing for major fixed assets such as land, buildings, machinery and equipment. It is delivered through Certified Development Companies (CDCs) working with private lenders."
+    },
+    {
+      "script_id": "R03",
+      "claim": "Typical 504 split lender/CDC/borrower",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S6"
+      ],
+      "correct_wording": "A typical 504 project is structured as: a private lender loan of up to 50% of project cost (senior lien), a CDC loan of up to 40% backed by a 100% SBA-guaranteed debenture, and a borrower contribution of at least 10%. This is from SBA.gov as of Oct. 2026. Some projects require a larger borrower contribution."
+    },
+    {
+      "script_id": "R03",
+      "claim": "504 cannot be used for working capital or inventory",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S6"
+      ],
+      "correct_wording": "504 loans cannot be used for working capital or inventory."
+    },
+    {
+      "script_id": "R03",
+      "claim": "7(a) eligible uses for contrast",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S2"
+      ],
+      "correct_wording": "Unlike 504, 7(a) can fund working capital, changes of ownership, equipment, real estate and refinancing of certain business debt."
+    },
+    {
+      "script_id": "R04",
+      "claim": "SBA loans involve more documentation because of lender underwriting plus SBA eligibility requirements",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S2",
+        "S3",
+        "S14"
+      ],
+      "correct_wording": "SBA loans usually need more paperwork because the lender must document its own credit analysis and also SBA's eligibility requirements. Examples are size, citizenship, use of proceeds, 'credit elsewhere,' and tax transcript verification."
+    },
+    {
+      "script_id": "R04",
+      "claim": "Longer maximum terms by use of proceeds",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S2",
+        "S16"
+      ],
+      "correct_wording": "SBA's rule is the shortest appropriate term based on ability to repay. That is typically 10 years or less, with up to 25 years for real estate (or equipment with a useful life over 10 years). These figures are from SBA.gov as of Oct. 2026 and may change. SOP 50 10 8.1 reportedly changed how blended terms work on acquisition loans, so avoid saying '25-year acquisition loans.'"
+    },
+    {
+      "script_id": "R04",
+      "claim": "Avoid any specific timeline claim",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "None of the wording here states a timeline. Secondary sources quote durations such as '2–4 weeks underwriting'; do not use them. [downgraded: no source found in real tool results]"
+    },
+    {
+      "script_id": "R05",
+      "claim": "Working capital is an eligible use of 7(a) proceeds",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S2"
+      ],
+      "correct_wording": "Short- and long-term working capital is an eligible use of 7(a) proceeds."
+    },
+    {
+      "script_id": "R05",
+      "claim": "SBA Express and CAPLines exist for working capital; current limits",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "correct_wording": "SBA Express: up to $500,000, with a 50% maximum SBA guaranty; revolving lines are allowed for up to 10 years. CAPLines: SBA's umbrella program for short-term and cyclical working-capital needs, with lines of up to $5 million. These are SBA.gov figures as of Oct. 2026 and may change."
+    },
+    {
+      "script_id": "R05",
+      "claim": "Lenders look at historical cash flow and repayment ability for working capital",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S14"
+      ],
+      "correct_wording": "SBA's lending criteria require lenders to consider past earnings, projected cash flow and the ability to repay from business earnings (13 CFR 120.150). How much weight each factor gets is up to the lender."
+    },
+    {
+      "script_id": "R06",
+      "claim": "Common underwriting factors for franchise loans: liquidity, experience, credit, projections",
+      "claim_type": "lender_varies",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S14"
+      ],
+      "correct_wording": "The baseline factors come from SBA rules (13 CFR 120.150): character and credit history, management experience, past earnings and projected cash flow, repayment ability, invested equity and collateral. How a lender weighs liquidity and franchise experience differs from lender to lender. No numeric minimums are SBA program rules."
+    },
+    {
+      "script_id": "R06",
+      "claim": "Lenders review the FDD in underwriting",
+      "claim_type": "lender_varies",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S8"
+      ],
+      "correct_wording": "Lenders check that the franchise brand is eligible, using the SBA Franchise Directory. Many lenders also review the FDD and franchise agreement, but only lender and industry blogs confirm this, not SBA primary text. Suggested wording: 'Lenders commonly review the franchise agreement and FDD.'"
+    },
+    {
+      "script_id": "R06",
+      "claim": "No numeric credit-score or liquidity minimums",
+      "claim_type": "general_preparation",
+      "verdict": "verified",
+      "source_ids": [
+        "S19"
+      ],
+      "correct_wording": "State no numbers. SBA ended the SBSS score prescreen for 7(a) Small Loans in 2026. There is no SBA-wide minimum personal credit score or liquidity threshold; lenders set their own."
+    },
+    {
+      "script_id": "R07",
+      "claim": "FTC Franchise Rule requires an FDD with 23 items (16 CFR Part 436)",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S10",
+        "S11"
+      ],
+      "correct_wording": "Under the FTC Franchise Rule (16 CFR Part 436), franchisors must give prospective franchisees a disclosure document. Its 23 items are listed in 16 CFR 436.5."
+    },
+    {
+      "script_id": "R07",
+      "claim": "Item 7 = estimated initial investment; Item 5 = initial fees",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S10"
+      ],
+      "correct_wording": "Item 5 discloses initial fees, meaning payments to the franchisor or its affiliates before opening. Item 7 discloses the estimated initial investment in a table."
+    },
+    {
+      "script_id": "R07",
+      "claim": "Item 7 includes additional funds/working capital for an initial period",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S10"
+      ],
+      "correct_wording": "Item 7 includes, where applicable, an 'Additional funds' line for an initial period of operation. It also covers fees, real property, equipment, leasehold improvements, opening inventory, deposits and licenses."
+    },
+    {
+      "script_id": "R07",
+      "claim": "Item 19 financial performance representations, optional",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S10"
+      ],
+      "correct_wording": "Item 19 covers financial performance representations. Franchisors do not have to make them, but if they do, the figures must have a reasonable basis and written substantiation and must appear in Item 19."
+    },
+    {
+      "script_id": "R08",
+      "claim": "Current status and role of SBA Franchise Directory",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S8",
+        "S9"
+      ],
+      "correct_wording": "The SBA Franchise Directory is active. SOP 50 10 8 reinstated it on June 1, 2025, and SBA updates it weekly (latest version dated Oct. 9, 2026). Lenders use it to confirm that a franchise brand is eligible for SBA financing."
+    },
+    {
+      "script_id": "R08",
+      "claim": "Brand eligibility does not equal borrower approval",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S8",
+        "S14"
+      ],
+      "correct_wording": "A brand's listing only means it is eligible. SBA says listing 'is not an endorsement or approval of the brand and does not ensure the success of the business.' Each borrower is still underwritten individually."
+    },
+    {
+      "script_id": "R08",
+      "claim": "No failure/default statistics",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "No failure or default statistics were researched or verified. Do not include any. [downgraded: no source found in real tool results]"
+    },
+    {
+      "script_id": "R09",
+      "claim": "Working capital can be included in franchise/7(a) financing",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S2"
+      ],
+      "correct_wording": "Working capital is an eligible 7(a) use and can be part of a franchise start-up financing request, subject to lender underwriting."
+    },
+    {
+      "script_id": "R09",
+      "claim": "Scenario numbers labeled hypothetical",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Label all figures on screen: 'Hypothetical round numbers for illustration only. Not typical costs.' [downgraded: no source found in real tool results]"
+    },
+    {
+      "script_id": "R09",
+      "claim": "FDD Item 7 includes 'additional funds'",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S10"
+      ],
+      "correct_wording": "FDD Item 7 includes an 'Additional funds' estimate for an initial period of operation (16 CFR 436.5)."
+    },
+    {
+      "script_id": "R10",
+      "claim": "Equity injection required for start-ups including new franchises; percentage",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S17",
+        "S16",
+        "S4"
+      ],
+      "correct_wording": "Under SOP 50 10 8 (June 1, 2025), the minimum equity injection for start-ups was 10% of total project costs. SOP 50 10 8.1 (Oct. 1, 2026) keeps a 10% minimum for changes of ownership. For start-ups under 8.1, I could not confirm the figure from primary text, so say 'SBA requires an equity injection for start-ups, and lenders may require more.' Check against the SOP before giving 10%."
+    },
+    {
+      "script_id": "R10",
+      "claim": "Owner-operator vs absentee ownership considered",
+      "claim_type": "lender_varies",
+      "verdict": "not_verified",
+      "source_ids": [
+        "S14"
+      ],
+      "correct_wording": "Not verified as an SBA rule. 13 CFR 120.150 lists 'experience and depth of management' as a factor. Safe wording: 'Lenders consider who will manage the business day to day.'"
+    },
+    {
+      "script_id": "R10",
+      "claim": "FDD Item 7 as source for total investment",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S10"
+      ],
+      "correct_wording": "FDD Item 7 gives the franchisor's estimated initial investment range."
+    },
+    {
+      "script_id": "R11",
+      "claim": "Definition of seller note",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S16",
+        "S17"
+      ],
+      "correct_wording": "A seller note is a loan from the seller to the buyer for part of the purchase price. The buyer pays it back to the seller over time instead of paying that amount at closing."
+    },
+    {
+      "script_id": "R11",
+      "claim": "SOP rules on seller notes counting toward equity injection and standby",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S16",
+        "S17",
+        "S22",
+        "S4"
+      ],
+      "correct_wording": "SOP 50 10 8.1 (loans numbered on or after Oct. 1, 2026): a seller note can count toward the 10% minimum equity injection only if it is on full standby, meaning no principal or interest payments, for the life of the SBA loan. Seller notes, other standby debt and minority investor equity together can cover no more than half of the required injection. This comes from law-firm and consultant summaries; check it against Appendix 15 of the SOP before publishing."
+    },
+    {
+      "script_id": "R11",
+      "claim": "Do not imply 100% seller financing possible in SBA deals",
+      "claim_type": "general_preparation",
+      "verdict": "verified",
+      "source_ids": [
+        "S16"
+      ],
+      "correct_wording": "Seller notes can cover at most half of the required equity injection, so the buyer must bring at least half of it from other eligible sources. Never imply that an SBA deal can be 100% seller-financed."
+    },
+    {
+      "script_id": "R12",
+      "claim": "Consideration of management experience, character, credit; credit elsewhere",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S14",
+        "S15",
+        "S2"
+      ],
+      "correct_wording": "SBA's lending criteria (13 CFR 120.150) include character, reputation and credit history; experience and depth of management; and repayment ability. Separately, the business must be unable to get the credit on reasonable terms from non-government sources. That is the 'credit elsewhere' test listed on SBA.gov's 7(a) eligibility page. Its regulation section was not checked."
+    },
+    {
+      "script_id": "R12",
+      "claim": "Personal guaranty for owners at or above a threshold",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S23"
+      ],
+      "correct_wording": "Under current SOP 50 10 (8 and 8.1, as of Oct. 2026), owners of 20% or more generally must give a full, unlimited personal guaranty. Lenders can require guaranties from others. This is from lender and secondary sources; check it against the SOP."
+    },
+    {
+      "script_id": "R12",
+      "claim": "Avoid 'no banks, no hoops' language",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Use only the 'Reality check' opener structure; do not copy V01 wording. [downgraded: no source found in real tool results]"
+    },
+    {
+      "script_id": "R13",
+      "claim": "Definition of DSCR",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S16"
+      ],
+      "correct_wording": "Debt service coverage ratio (DSCR) = cash flow available for debt service ÷ total annual debt payments (principal plus interest). For example, 1.25x means $1.25 of cash flow for every $1.00 of debt payments."
+    },
+    {
+      "script_id": "R13",
+      "claim": "Minimum DSCR under current SOP",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S16",
+        "S21",
+        "S22"
+      ],
+      "correct_wording": "Under SOP 50 10 8.1 (from Oct. 1, 2026), most change-of-ownership loans (initial acquisitions, owner buyouts) reportedly need at least 1.25x, measured on historical cash flow. Business expansions stay at 1.15x. Under SOP 50 10 8 the general minimum was 1.15x. Many lenders set higher thresholds. These figures are from a law firm and secondary sources; check them against the SOP. Safe wording: 'SBA sets a minimum DSCR and many lenders require more.'"
+    },
+    {
+      "script_id": "R13",
+      "claim": "Correct arithmetic in hypothetical",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Example (hypothetical): $150,000 cash flow ÷ $120,000 annual debt payments = 1.25x. Label it hypothetical and recheck any figures the copywriter changes. [downgraded: no source found in real tool results]"
+    },
+    {
+      "script_id": "R13",
+      "claim": "No real-estate DSCR loan concepts",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Talk only about business cash flow coverage. Leave out investor-property 'DSCR loans.' [downgraded: no source found in real tool results]"
+    },
+    {
+      "script_id": "R14",
+      "claim": "Independent business valuation threshold on change of ownership",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S21",
+        "S22"
+      ],
+      "correct_wording": "Under SOP 50 10 8, an independent valuation was required when the amount financed minus appraised real estate and equipment exceeded $250,000, or when buyer and seller had a close relationship. Secondary sources say SOP 50 10 8.1 (Oct. 1, 2026) drops the $250,000 exception, so every change of ownership needs an independent qualified valuation. A quality of earnings report is also required for initial acquisitions and expansions with a purchase price of $3M or more. Check against the SOP before stating thresholds."
+    },
+    {
+      "script_id": "R14",
+      "claim": "Verified financials (tax returns) vs seller add-backs",
+      "claim_type": "lender_varies",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S18",
+        "S21"
+      ],
+      "correct_wording": "Lenders check seller financials against IRS tax transcripts. Seller add-backs must be documented and may be adjusted or rejected. Under SOP 50 10 8.1, larger acquisitions need a quality of earnings review."
+    },
+    {
+      "script_id": "R14",
+      "claim": "Treatment of goodwill",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S21"
+      ],
+      "correct_wording": "Goodwill and intangible value in an SBA acquisition must be supported by the business valuation. The SBA loan for a change of ownership is reportedly capped at the valuation amount. This is a secondary source; check against the SOP."
+    },
+    {
+      "script_id": "R15",
+      "claim": "Equity injection for change of ownership",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S16",
+        "S17",
+        "S22"
+      ],
+      "correct_wording": "Under SOP 50 10 8.1 (Oct. 1, 2026), as under SOP 50 10 8 (June 1, 2025), complete changes of ownership require an equity injection of at least 10% of total project costs. Lenders may require more. This is from law-firm and consultant sources; check it against the SOP."
+    },
+    {
+      "script_id": "R15",
+      "claim": "Lenders verify cash flow with tax returns and financial statements",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S18",
+        "S14"
+      ],
+      "correct_wording": "Lenders review business tax returns and financial statements and check them against IRS transcripts. Typically this covers the most recent three years."
+    },
+    {
+      "script_id": "R15",
+      "claim": "Some lenders selective about smaller acquisition loans",
+      "claim_type": "lender_varies",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Not verified. Drop this point."
+    },
+    {
+      "script_id": "R16",
+      "claim": "Common 7(a) documents: Form 1919, Form 413, tax returns, years",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S12",
+        "S13",
+        "S18"
+      ],
+      "correct_wording": "Common 7(a) application items include SBA Form 1919 (Borrower Information Form), SBA Form 413 (Personal Financial Statement), and business and personal tax returns, generally the last three years, checked through IRS transcripts. Lenders may ask for more."
+    },
+    {
+      "script_id": "R16",
+      "claim": "Lenders may request additional items",
+      "claim_type": "lender_varies",
+      "verdict": "verified",
+      "source_ids": [
+        "S14"
+      ],
+      "correct_wording": "Lenders apply their own credit procedures and may request documents beyond SBA's forms."
+    },
+    {
+      "script_id": "R16",
+      "claim": "Form numbers and names still active",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S12",
+        "S13"
+      ],
+      "correct_wording": "Both forms appear on SBA.gov under these names: Form 1919, current version effective March 19, 2025, and Form 413, effective Feb. 13, 2025. Revisions after the 2026 citizenship changes are possible, so recheck the dates before publishing."
+    },
+    {
+      "script_id": "R17",
+      "claim": "Equity injection definition and minimum for start-ups and changes of ownership",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S16",
+        "S17",
+        "S4"
+      ],
+      "correct_wording": "An equity injection is the borrower's own contribution toward total project costs. The minimum is 10% for complete changes of ownership under SOP 50 10 8.1 (Oct. 1, 2026), and was 10% for start-ups and changes of ownership under SOP 50 10 8 (June 1, 2025). The start-up figure under 8.1 still needs checking against the SOP."
+    },
+    {
+      "script_id": "R17",
+      "claim": "Acceptable sources: cash, documented gifts, seller notes on standby",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S17",
+        "S16"
+      ],
+      "correct_wording": "Sources cited by lending consultants: cash or personal savings, documented gifts (not to be repaid), and seller notes on full standby, capped at half of the required injection together with other standby debt and minority investor equity. These are not confirmed from primary SOP text; check against Appendix 15 before listing them."
+    },
+    {
+      "script_id": "R17",
+      "claim": "Documentation for verifying source of injection",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S17",
+        "S24"
+      ],
+      "correct_wording": "Lenders must verify that the injection was made and where it came from. Typical evidence includes bank statements, copies of checks or wires, settlement statements and gift letters. Required statement periods vary by lender."
+    },
+    {
+      "script_id": "R17",
+      "claim": "Avoid personal finance advice",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Describe the rules only; do not advise on how to raise the cash. [downgraded: no source found in real tool results]"
+    },
+    {
+      "script_id": "R18",
+      "claim": "Underwriting considers repayment from cash flow plus credit",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S14"
+      ],
+      "correct_wording": "SBA requires lenders to consider both credit history and the ability to repay from business earnings and cash flow (13 CFR 120.150)."
+    },
+    {
+      "script_id": "R18",
+      "claim": "Business plans or projections required for start-ups and acquisitions",
+      "claim_type": "lender_varies",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S14",
+        "S16"
+      ],
+      "correct_wording": "SBA criteria include 'projected cash flow and future prospects,' and lenders commonly ask start-ups for projections or a business plan. For acquisitions under SOP 50 10 8.1, historical cash flow carries the most weight, and projections reportedly cannot cover a shortfall."
+    },
+    {
+      "script_id": "R18",
+      "claim": "FICO SBSS scores",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S19"
+      ],
+      "correct_wording": "Leave SBSS out of the script. SBA sunset the SBSS score requirement for 7(a) Small Loans of $350,000 or less in 2026 (PN 5000-875701; supplemental guidance effective March 1, 2026)."
+    },
+    {
+      "script_id": "R19",
+      "claim": "Tax returns required; discrepancies need explanation; IRS Form 4506-C",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S18",
+        "S24"
+      ],
+      "correct_wording": "Lenders check applicants' financial data against IRS tax transcripts, generally through IRS Form 4506-C, and discrepancies must be resolved. Consultants say Form 8821 may also be accepted under SOP 50 10 8.1. Check the details against the SOP."
+    },
+    {
+      "script_id": "R19",
+      "claim": "Source-of-funds documentation for equity injection",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S17"
+      ],
+      "correct_wording": "Lenders must document where the equity injection came from and that it was put into the business, using bank statements, transfer records and similar evidence."
+    },
+    {
+      "script_id": "R19",
+      "claim": "General patterns, not statistics",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "No statistics were verified. Present these as general patterns only. [downgraded: no source found in real tool results]"
+    },
+    {
+      "script_id": "R20",
+      "claim": "Lenders differ in appetite; delegated authority (PLP) varies",
+      "claim_type": "lender_varies",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S3"
+      ],
+      "correct_wording": "SBA gives delegated authority (PLP) only to qualified lenders, so not every SBA lender can approve loans without prior SBA review. Lenders also set their own credit policies within SBA rules. Suggested wording: 'Lenders differ in the loan sizes, industries and deal types they focus on.' Phrase this as general guidance, not a statistic."
+    },
+    {
+      "script_id": "R20",
+      "claim": "Smaller SBA acquisition loans harder to place",
+      "claim_type": "lender_varies",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Not verified. Drop it, or reframe neutrally: 'Each lender decides which deal sizes fit its business.'"
+    },
+    {
+      "script_id": "R20",
+      "claim": "No implied lender partnerships for Livetrust",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Do not say or imply that Livetrust has any lender partnerships or relationships. None are confirmed. [downgraded: no source found in real tool results]"
+    }
+  ],
+  "rejected_sources": []
+}

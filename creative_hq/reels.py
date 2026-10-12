@@ -297,36 +297,10 @@ class ReelsWorkflow(Workflow):
             # T5 Copywriter (parallel batches)
             wps = float(self.cfg["words_per_second"])
             lo, hi = int(self.cfg["min_seconds"] * wps), int(self.cfg["max_seconds"] * wps)
-            ref_by_id = {r["ref_id"]: r for r in refs}
 
             async def write_batch(b: int, idx: list[int]):
-                bt = [topics[i] for i in idx]
-                bref = [ref_by_id[t["reference_ref_id"]] for t in bt if t["reference_ref_id"] in ref_by_id]
-                bclaims = [c for c in facts["claims"] if c["script_id"] in {t["script_id"] for t in bt}]
-                return (await self._task(run_id, tid(f"T5{chr(97 + b)}"), "copywriter",
-                    f"# DIRECTOR BRIEF\n{d['brief']}\n\n# YOUR ASSIGNMENT\n{d['assignments']['AG-004']}\n\n"
-                    f"# WRITE {len(bt)} REELS SCRIPTS (spoken by Kevin to camera)\n"
-                    f"- Natural, conversational American English; calm, clear, consultative, no guru language.\n"
-                    f"- Full script INCLUDING the hook, {lo}-{hi} words (35-60 s at a natural pace). Count your words.\n"
-                    "- Write every amount and number in words (e.g. 'three hundred thousand dollars', 'ten percent').\n"
-                    "- If you mention ~USD 300,000, say whether it is financing requested, annual revenue or purchase price; "
-                    "amount_context must state which and add '(provisional)'.\n"
-                    "- Use ONLY claims verified/partially_verified below, with their correct_wording; mark hypothetical "
-                    "examples as hypothetical in the spoken text. Drop anything unverified. No sources in the spoken text.\n"
-                    "- Never promise approval, fast funding or guaranteed results; never 'anyone can get this loan'. No "
-                    "invented cases, testimonials or Kevin experience.\n"
-                    "- CTA by goal: save / share with a partner or buyer / reply to a specific question / talk to Kevin via "
-                    "DM (the only approved channel). No links, freebies, comment automations or services that don't exist.\n"
-                    "- Vary hooks: statements, scenarios, comparisons, questions, practical explanations; no off-camera "
-                    "interviewer unless the structure needs it.\n"
-                    "- recording_notes_es: brief Spanish notes ONLY on how Kevin should record and act (framing, energy, "
-                    "pauses, gestures, where to look). No editing, overlays or B-roll.\n"
-                    "- Do not copy other creators' scripts, phrases or personal stories; adapt only the mechanism "
-                    "(adaptation_note_es, in Spanish). If reference_ref_id is 'original', say so.\n"
-                    "- why_selected_es / what_to_measure_es in Spanish (e.g. retention, shares, saves, profile visits, "
-                    "qualified DMs; never treat views as leads).\n\n"
-                    f"# TOPICS\n{_j(bt)}\n\n# REFERENCES\n{_j(bref)}\n\n# VERIFIED CLAIMS\n{_j(bclaims)}\n\n"
-                    f"# SOURCES\n{_j(facts['sources'])}\n\n{ctx}", work, schema=SCRIPTS_SCHEMA)).output["scripts"]
+                return await self._write_scripts(run_id, tid(f"T5{chr(97 + b)}"), d, [topics[i] for i in idx],
+                                                 refs, facts, ctx, work)
 
             parts = await asyncio.gather(*(write_batch(b, idx) for b, idx in enumerate(batches)), return_exceptions=True)
             errors = [p for p in parts if isinstance(p, BaseException)]
@@ -360,6 +334,108 @@ class ReelsWorkflow(Workflow):
             log.exception("unexpected error")
             self._fail(run_id, f"{type(e).__name__}: {e}")
         return run_id
+
+    async def _write_scripts(self, run_id, task_id, d, bt, refs, facts, ctx, work) -> list[dict]:
+        wps = float(self.cfg["words_per_second"])
+        lo, hi = int(self.cfg["min_seconds"] * wps), int(self.cfg["max_seconds"] * wps)
+        ref_by_id = {r["ref_id"]: r for r in refs}
+        bref = [ref_by_id[t["reference_ref_id"]] for t in bt if t["reference_ref_id"] in ref_by_id]
+        bclaims = [c for c in facts["claims"] if c["script_id"] in {t["script_id"] for t in bt}]
+        out = (await self._task(run_id, task_id, "copywriter",
+            f"# DIRECTOR BRIEF\n{d['brief']}\n\n# YOUR ASSIGNMENT\n{d['assignments']['AG-004']}\n\n"
+            f"# WRITE {len(bt)} REELS SCRIPTS (spoken by Kevin to camera)\n"
+            f"- Natural, conversational American English; calm, clear, consultative, no guru language.\n"
+            f"- `script` = ONLY the words Kevin says out loud, INCLUDING the hook, {lo}-{hi} words (35-60 s at a natural "
+            "pace). No timecodes, labels, on-screen text, visual notes, captions, hashtags or risk notes in it. Count your words.\n"
+            f"- Use exactly these script_id values: {[t['script_id'] for t in bt]}.\n"
+            "- Write every amount and number in words (e.g. 'three hundred thousand dollars', 'ten percent').\n"
+            "- If you mention ~USD 300,000, say whether it is financing requested, annual revenue or purchase price; "
+            "amount_context must state which and add '(provisional)'.\n"
+            "- Use ONLY claims verified/partially_verified below, with their correct_wording; mark hypothetical "
+            "examples as hypothetical in the spoken text. Drop anything unverified. No sources in the spoken text.\n"
+            "- Never promise approval, fast funding or guaranteed results; never 'anyone can get this loan'. No "
+            "invented cases, testimonials or Kevin experience.\n"
+            "- CTA by goal: save / share with a partner or buyer / reply to a specific question / talk to Kevin via "
+            "DM (the only approved channel). No links, freebies, comment automations or services that don't exist.\n"
+            "- Vary hooks: statements, scenarios, comparisons, questions, practical explanations; no off-camera "
+            "interviewer unless the structure needs it.\n"
+            "- recording_notes_es: brief Spanish notes ONLY on how Kevin should record and act (framing, energy, "
+            "pauses, gestures, where to look). No editing, overlays or B-roll.\n"
+            "- Do not copy other creators' scripts, phrases or personal stories; adapt only the mechanism "
+            "(adaptation_note_es, in Spanish). If reference_ref_id is 'original', say so.\n"
+            "- why_selected_es / what_to_measure_es in Spanish (e.g. retention, shares, saves, profile visits, "
+            "qualified DMs; never treat views as leads).\n\n"
+            f"# TOPICS\n{_j(bt)}\n\n# REFERENCES\n{_j(bref)}\n\n# VERIFIED CLAIMS\n{_j(bclaims)}\n\n"
+            f"# SOURCES\n{_j(facts['sources'])}\n\n{ctx}", work, schema=SCRIPTS_SCHEMA)).output["scripts"]
+        ids = [t["script_id"] for t in bt]
+        for i, sc in enumerate(out[:len(ids)]):   # the system, not the model, owns the IDs
+            if sc["script_id"] not in ids:
+                sc["script_id"] = ids[i]
+        return out[:len(ids)]
+
+    async def redo(self, client: Client, run_id: str, script_ids: list[str]) -> None:
+        """Rewrites selected scripts of a finished delivery (new Copywriter + Supervisor tasks) and re-saves it."""
+        run = self.store.get_run(run_id)
+        out = Path(run["deliverable_dir"])
+        work = out / "_work"
+        from .runner import AgentRunner
+        self.runner = AgentRunner(self.settings.path("logs") / "runs" / f"{run_id}.jsonl")
+        out_of = lambda suffix: json.loads(self.store.get_task(f"{run_id}-{suffix}")["output_json"])  # noqa: E731
+        d, topics = out_of("T1"), out_of("T3")["topics"]
+        saved = json.loads((out / "scripts.json").read_text())
+        refs_file = json.loads((work / "references.json").read_text())
+        refs, ref_report = refs_file["references"], refs_file["report"]
+        facts = json.loads((work / "facts.json").read_text())
+        redo_topics = [t for t in topics if t["script_id"] in script_ids]
+        if not redo_topics:
+            raise SystemExit(f"none of {script_ids} found in this delivery")
+        n = sum(1 for t in self.store.tasks_for_run(run_id) if "-T5r" in t["id"]) + 1
+        w_tid, q_tid = f"{run_id}-T5r{n}", f"{run_id}-T6r{n}"
+        self.store.create_task(w_tid, run_id, 50 + 2 * n, "AG-004", f"Rewrite scripts {script_ids}", [])
+        self.store.create_task(q_tid, run_id, 51 + 2 * n, "AG-006", f"Re-review rewritten scripts {script_ids}", [w_tid])
+        day = run["deliverable_dir"].rstrip("/").split("/")[-1][:10]
+        ctx = (f"# CLIENT PROFILE\n{client.profile_text()}\n\n# CLIENT KNOWLEDGE BASE\n{client.knowledge_text()}\n\n"
+               f"# DELIVERY DATE\n{day}")
+        log.info("REELS REDO %s: %s", run_id, script_ids)
+        try:
+            new = await self._write_scripts(run_id, w_tid, d, redo_topics, refs, facts, ctx, work)
+            wps = float(self.cfg["words_per_second"])
+            lo, hi = int(self.cfg["min_seconds"] * wps), int(self.cfg["max_seconds"] * wps)
+            checks = self._auto_checks(new, lo, hi, wps, facts)
+            others = [{"script_id": x["script_id"], "topic": x["topic"], "qa_status": x["qa_status"]}
+                      for x in saved["scripts"] if x["script_id"] not in script_ids]
+            qa_new = (await self._task(run_id, q_tid, "supervisor",
+                f"# REVIEW THESE REWRITTEN REELS SCRIPTS (same criteria as the daily QA; do not use Read)\n"
+                "Mark each ready_to_record or pending (unsupported claims, lender condition presented as SBA rule, promises, "
+                "invented cases, USD figure without context, nonexistent CTA resources, duration outside 35-60 s, digits in "
+                "spoken text, copied creator phrasing, editing/overlay/B-roll notes). Then re-rank the 5 most promising "
+                "scripts of the WHOLE delivery (rewritten + others below). Spanish for issues and reasons.\n\n"
+                f"# PREVIOUS TOP 5\n{_j(saved['qa']['top5'])}\n\n# OTHER SCRIPTS IN THIS DELIVERY\n{_j(others)}\n\n"
+                f"# AUTOMATED CHECKS\n{_j(checks)}\n\n# VERIFIED CLAIMS\n{_j(facts['claims'])}\n\n"
+                f"# SOURCES\n{_j(facts['sources'])}\n\n# REWRITTEN SCRIPTS\n{_j(new)}\n\n{ctx}",
+                work, schema=QA_SCHEMA)).output
+        except (TaskError, BudgetExceeded) as e:
+            log.error("redo failed: %s (previous delivery left unchanged)", e)
+            return
+        topic_ids = {t["script_id"] for t in topics}
+        # keep untouched scripts (dropping any with malformed IDs, which are the ones being rewritten) + new ones
+        scripts = [x for x in saved["scripts"] if x["script_id"] in topic_ids and x["script_id"] not in script_ids] + new
+        qa = saved["qa"]
+        qa_by = {q["script_id"]: q for q in qa["scripts"]}
+        qa_by.update({q["script_id"]: q for q in qa_new["scripts"]})
+        qa = {"summary_es": qa["summary_es"] + f" | Reescritos {script_ids}: " + qa_new["summary_es"],
+              "scripts": list(qa_by.values()), "top5": qa_new["top5"]}
+        all_checks = {x["script_id"]: [i for i in x.get("qa_issues", []) if i.startswith(("duration", "digits", "claims"))]
+                      for x in saved["scripts"] if x["script_id"] not in script_ids}
+        all_checks.update(checks)
+        for x in scripts:   # reset fields recomputed by _save
+            for k in ("qa_status", "qa_issues", "full_id", "priority"):
+                x.pop(k, None)
+        row = self.store.db.execute("SELECT review FROM reel_weekly WHERE run_id=?", (run_id,)).fetchone()
+        self.store.db.execute("DELETE FROM reel_scripts WHERE run_id=?", (run_id,))
+        self._save(client, run_id, day, d, refs, ref_report, topics, facts, scripts, all_checks, qa, out,
+                   row["review"] if row else None)
+        log.info("REELS REDO done | run total $%.3f", self.store.spent_run(run_id))
 
     # ----------------------------------------------------------------- verification
     def _verify_refs(self, res, run_id: str) -> tuple[list[dict], dict]:

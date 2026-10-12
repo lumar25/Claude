@@ -221,6 +221,9 @@ def main(argv: list[str] | None = None) -> int:
     rm.add_argument("script_id")
     rm.add_argument("pairs", nargs="*", help="key=value, e.g. views=1200 shares=14")
     rm.add_argument("--note", default="")
+    rd = sub.add_parser("reels-redo", help="rewrite selected scripts of a delivery")
+    rd.add_argument("run_id")
+    rd.add_argument("script_ids", nargs="+", help="e.g. R16 R17")
     rr = sub.add_parser("reels-registry")
     rr.add_argument("--client", default="livetrust-financial")
     h = sub.add_parser("history")
@@ -289,7 +292,7 @@ def main(argv: list[str] | None = None) -> int:
               "publishing is a separate manual step that CREATIVE HQ does not perform.")
         return 0
 
-    if args.cmd in ("reels", "reel-status", "reel-metrics", "reels-registry"):
+    if args.cmd in ("reels", "reel-status", "reel-metrics", "reels-registry", "reels-redo"):
         from .reels import STATUSES, ReelsWorkflow
         wf = ReelsWorkflow(settings, load_agents(settings), store)
         if args.cmd == "reels":
@@ -299,6 +302,11 @@ def main(argv: list[str] | None = None) -> int:
             print(f"\nRun {run_id}: {run['status']}" + (f"\nError: {run['error']}" if run["error"] else
                   f"\nDelivery: {run['deliverable_dir']}/entrega.md"))
             return 0 if run["status"] == "pending_approval" else 1
+        if args.cmd == "reels-redo":
+            setup_logging(settings)
+            run = store.get_run(args.run_id)
+            asyncio.run(wf.redo(load_client(settings, run["client_id"]), args.run_id, args.script_ids))
+            return 0
         if args.cmd == "reels-registry":
             for r in wf.registry(args.client):
                 print(f"{r['id']}  {r['status']:<12} p{r['priority'] or '-'}  {r['structure']:<20} {r['topic'][:70]}")

@@ -41,6 +41,19 @@ Escribe la petición en lenguaje natural. Antes de gastar crédito te pide confi
 
 **Comprobar que los 6 agentes funcionan de verdad** (una llamada real por agente, unos $0.15): `python -m creative_hq check --live`
 
+## Banco diario de Reels (Kevin Martinez)
+
+`python -m creative_hq reels` genera 20 guiones de Reels con investigación de TikTok/Instagram y verificación financiera.
+La entrega queda en `deliverables/livetrust-financial/reels/<fecha>/entrega.md`.
+- Repetir guiones concretos: `python -m creative_hq reels-redo <run_id> R16 R17`
+- Registro: `python -m creative_hq reels-registry`
+- Estado: `python -m creative_hq reel-status <ID> seleccionado|grabado|publicado|descartado`
+- Métricas reales: `python -m creative_hq reel-metrics <ID> views=... retention=... shares=... saves=... profile_visits=... qualified_dms=... --note "..."`
+
+Ejecución automática: hay una rutina de Claude Code (Routine) que cada mañana abre una sesión nueva, ejecuta
+`python -m creative_hq reels` en la rama `creative-hq-agents`, guarda y sube los resultados.
+Para hacerlo a mano o en otro equipo: `git checkout creative-hq-agents && pip install -r requirements.txt && python -m creative_hq reels`.
+
 ## Folder map
 
 | Path | What it is |
