@@ -348,6 +348,8 @@ class ReelsWorkflow(Workflow):
             f"- `script` = ONLY the words Kevin says out loud, INCLUDING the hook, {lo}-{hi} words (35-60 s at a natural "
             "pace). No timecodes, labels, on-screen text, visual notes, captions, hashtags or risk notes in it. Count your words.\n"
             f"- Use exactly these script_id values: {[t['script_id'] for t in bt]}.\n"
+            "- `hook` = only the spoken opening words (no 'Spoken:' label, no on-screen text, no timecodes). "
+            "`structure` = only the structure name. No design, overlay or animation notes anywhere.\n"
             "- Write every amount and number in words (e.g. 'three hundred thousand dollars', 'ten percent').\n"
             "- If you mention ~USD 300,000, say whether it is financing requested, annual revenue or purchase price; "
             "amount_context must state which and add '(provisional)'.\n"
