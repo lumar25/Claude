@@ -25,3 +25,15 @@ hard-sell.
 - Geographic focus
 - Brand kit, Instagram handle, website, preferred CTA
 Agents must NOT state any of these until they are added to this knowledge base.
+
+## Deal size focus (PROVISIONAL — to confirm with Kevin)
+Kevin initially works around deals or financing needs of about USD 300,000. It is NOT confirmed
+whether this means the financing requested, the business's annual revenue, or the purchase price.
+Any script that uses this figure must say which of the three it refers to and mark the
+interpretation as provisional.
+
+## Scope
+Business financing only: SBA loans, business acquisitions, franchise investment/acquisition,
+buyer readiness and deal structure. NOT personal finance, trading, crypto, or get-rich advice.
+Approved CTA channel so far: Instagram DM (see profile cta_default). No lead magnets, links,
+comment automations or services exist unless added here.

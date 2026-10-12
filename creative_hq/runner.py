@@ -67,6 +67,7 @@ class TaskResult:
     tool_calls: list[dict] = field(default_factory=list)
     search_urls: set[str] = field(default_factory=set)    # URLs returned by WebSearch
     fetched_urls: set[str] = field(default_factory=set)   # URLs successfully opened by WebFetch
+    search_texts: list[str] = field(default_factory=list)  # raw WebSearch result text (to check quoted captions)
     denied_tools: list[str] = field(default_factory=list)
 
 
@@ -203,6 +204,7 @@ class AgentRunner:
         text = _result_text(block.content)
         if call["name"] == "WebSearch":
             result.search_urls.update(normalize_url(u) for u in URL_RE.findall(text))
+            result.search_texts.append(text)
         elif call["name"] == "WebFetch":
             url = call["input"].get("url", "")
             if url:

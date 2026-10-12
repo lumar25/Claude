@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import json
 import logging
 import os
 import re
@@ -211,6 +212,17 @@ def main(argv: list[str] | None = None) -> int:
         a = sub.add_parser(name)
         a.add_argument("run_id")
         a.add_argument("--note", default="", required=(name == "reject"))
+    rl = sub.add_parser("reels", help="daily Reels script bank")
+    rl.add_argument("--client", default="livetrust-financial")
+    rs = sub.add_parser("reel-status")
+    rs.add_argument("script_id")
+    rs.add_argument("status")
+    rm = sub.add_parser("reel-metrics")
+    rm.add_argument("script_id")
+    rm.add_argument("pairs", nargs="*", help="key=value, e.g. views=1200 shares=14")
+    rm.add_argument("--note", default="")
+    rr = sub.add_parser("reels-registry")
+    rr.add_argument("--client", default="livetrust-financial")
     h = sub.add_parser("history")
     h.add_argument("client_id", nargs="?", default="livetrust-financial")
     args = p.parse_args(argv)
@@ -275,6 +287,39 @@ def main(argv: list[str] | None = None) -> int:
         store.set_history_status(args.run_id, status)
         print(f"Run {args.run_id} marked {status}. Nothing was published or sent — "
               "publishing is a separate manual step that CREATIVE HQ does not perform.")
+        return 0
+
+    if args.cmd in ("reels", "reel-status", "reel-metrics", "reels-registry"):
+        from .reels import STATUSES, ReelsWorkflow
+        wf = ReelsWorkflow(settings, load_agents(settings), store)
+        if args.cmd == "reels":
+            setup_logging(settings)
+            run_id = asyncio.run(wf.run_daily(load_client(settings, args.client)))
+            run = store.get_run(run_id)
+            print(f"\nRun {run_id}: {run['status']}" + (f"\nError: {run['error']}" if run["error"] else
+                  f"\nDelivery: {run['deliverable_dir']}/entrega.md"))
+            return 0 if run["status"] == "pending_approval" else 1
+        if args.cmd == "reels-registry":
+            for r in wf.registry(args.client):
+                print(f"{r['id']}  {r['status']:<12} p{r['priority'] or '-'}  {r['structure']:<20} {r['topic'][:70]}")
+            return 0
+        row = store.db.execute("SELECT * FROM reel_scripts WHERE id=?", (args.script_id,)).fetchone()
+        if not row:
+            raise SystemExit(f"unknown script id {args.script_id}")
+        if args.cmd == "reel-status":
+            if args.status not in STATUSES:
+                raise SystemExit(f"status must be one of {STATUSES}")
+            store.db.execute("UPDATE reel_scripts SET status=?, updated_at=datetime('now') WHERE id=?", (args.status, args.script_id))
+        else:
+            metrics = json.loads(row["metrics_json"] or "{}")
+            for pair in args.pairs:
+                k, _, v = pair.partition("=")
+                metrics[k.strip()] = v.strip()
+            learn = "; ".join(x for x in [row["learnings"], args.note] if x)
+            store.db.execute("UPDATE reel_scripts SET metrics_json=?, learnings=?, updated_at=datetime('now') WHERE id=?",
+                             (json.dumps(metrics), learn, args.script_id))
+        store.db.commit()
+        print(f"{args.script_id} updated.")
         return 0
 
     if args.cmd == "history":

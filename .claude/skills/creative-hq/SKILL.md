@@ -18,6 +18,8 @@ agency's real multi-agent workflow for them. Explain results in the user's langu
 | Re-render slides + new Supervisor review | `python -m creative_hq review <run_id>` |
 | Approve / reject | `python -m creative_hq approve <run_id> --note "..."` / `python -m creative_hq reject <run_id> --note "..."` |
 | Topics already used | `python -m creative_hq history` |
+| Daily Reels script bank (20 scripts, research + verification) | `python -m creative_hq reels` — background, 15-30 min, then report `deliverables/<client>/reels/<date>/entrega.md` |
+| Reels registry / change status / add real metrics | `python -m creative_hq reels-registry` · `reel-status <ID> seleccionado\|grabado\|publicado\|descartado` · `reel-metrics <ID> views=.. shares=.. --note ".."` |
 
 ## Rules
 

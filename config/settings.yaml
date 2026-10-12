@@ -25,3 +25,12 @@ paths:
   logs: logs
   clients: clients
   agents: agents
+
+reels:
+  # Daily Reels script bank (python -m creative_hq reels)
+  scripts_per_day: 20
+  per_run_usd: 14.00        # cap for one daily delivery (all agents together)
+  words_per_second: 2.5     # natural speaking pace used to estimate duration
+  min_seconds: 35
+  max_seconds: 60
+  timezone_offset_hours: -3 # America/Buenos_Aires (no daylight saving)

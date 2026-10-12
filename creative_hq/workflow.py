@@ -40,7 +40,7 @@ class Workflow:
 
     # ------------------------------------------------------------------ budget
     def _budget_for(self, run_id: str, spec: AgentSpec) -> float:
-        run_left = self.settings.per_run_usd - self.store.spent_run(run_id)
+        run_left = getattr(self, "run_cap", self.settings.per_run_usd) - self.store.spent_run(run_id)
         day_left = self.settings.per_day_usd - self.store.spent_today()
         allowed = min(spec.max_budget_usd, run_left, day_left)
         if allowed < 0.05:
@@ -52,8 +52,9 @@ class Workflow:
 
     # ------------------------------------------------------------------ tasks
     async def _task(self, run_id: str, task_id: str, role: str, prompt: str, workdir: Path,
-                    readable_dirs: list[Path] | None = None) -> TaskResult:
-        spec = self.agents[role]
+                    readable_dirs: list[Path] | None = None, schema: dict | None = None,
+                    spec: AgentSpec | None = None) -> TaskResult:
+        spec = spec or self.agents[role]
         row = self.store.get_task(task_id)
         for dep in json.loads(row["depends_on"]):
             if self.store.get_task(dep)["status"] != "completed":
@@ -73,7 +74,7 @@ class Workflow:
                 self.runner, self.settings.task_retries,
                 budget_fn=lambda: self._budget_for(run_id, spec),
                 on_failed_attempt=failed_attempt,
-                spec=spec, task_id=task_id, prompt=prompt, schema=schemas.BY_ROLE[role],
+                spec=spec, task_id=task_id, prompt=prompt, schema=schema or schemas.BY_ROLE[role],
                 workdir=workdir, readable_dirs=readable_dirs,
             )
         except (TaskError, BudgetExceeded) as e:
