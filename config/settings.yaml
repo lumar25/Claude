@@ -34,3 +34,9 @@ reels:
   min_seconds: 35
   max_seconds: 60
   timezone_offset_hours: -3 # America/Buenos_Aires (no daylight saving)
+  task_budgets_usd:         # per-task caps for Reels (bigger than carousel tasks: 20 scripts per day)
+    director: 1.00
+    researcher: 2.50
+    strategist: 3.00
+    copywriter: 1.50
+    supervisor: 3.00

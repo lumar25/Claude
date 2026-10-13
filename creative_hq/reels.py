@@ -176,6 +176,12 @@ class ReelsWorkflow(Workflow):
         self.run_cap = float(cfg["per_run_usd"])
         self.tz = timezone(timedelta(hours=float(cfg["timezone_offset_hours"])), "ART")
 
+    def _spec(self, role: str, max_turns: int | None = None):
+        """Agent spec with the per-task budget for Reels tasks (config/settings.yaml -> reels.task_budgets_usd)."""
+        spec = self.agents[role]
+        budget = float((self.cfg.get("task_budgets_usd") or {}).get(role, spec.max_budget_usd))
+        return replace(spec, max_budget_usd=budget, max_turns=max_turns or spec.max_turns)
+
     # ----------------------------------------------------------------- registry
     def registry(self, client_id: str) -> list[dict]:
         rows = self.store.db.execute(
@@ -227,7 +233,6 @@ class ReelsWorkflow(Workflow):
         week_start = (local_now.date() - timedelta(days=local_now.weekday())).isoformat()
         first_of_week = self.store.db.execute("SELECT 1 FROM reel_weekly WHERE week_start=?", (week_start,)).fetchone() is None
         registry = self._registry_digest(client.client_id)
-        R = self.agents["researcher"]
         try:
             # T1 Director
             d = (await self._task(run_id, tid("T1"), "director",
@@ -236,14 +241,14 @@ class ReelsWorkflow(Workflow):
                  f"conversations about business financing. Never promise virality; views are not leads.\n\n"
                  f"# REGISTRY OF PREVIOUS SCRIPTS\n{registry}\n\n"
                  f"# WEEKLY REVIEW\n{'This is the FIRST delivery of the week starting ' + week_start + ': write weekly_review_es in Spanish (patterns observed, thematic priorities, narrative devices to test, topics covered and gaps). Base it only on the registry; if there is no data yet, say so plainly.' if first_of_week else 'Not the first delivery of the week: weekly_review_es = n/a.'}\n\n{ctx}",
-                 work, schema=DIRECTOR_SCHEMA)).output
+                 work, schema=DIRECTOR_SCHEMA, spec=self._spec("director"))).output
             if first_of_week and d["weekly_review_es"].strip().lower() != "n/a":
                 self.store.db.execute("INSERT OR REPLACE INTO reel_weekly VALUES (?,?,?,?)",
                                       (week_start, run_id, d["weekly_review_es"], now()))
                 self.store.db.commit()
 
             # T2 Researcher: social references
-            social_spec = replace(R, max_turns=45, max_budget_usd=2.5)
+            social_spec = self._spec("researcher", max_turns=45)
             social = await self._task(run_id, tid("T2"), "researcher",
                 f"# DIRECTOR BRIEF\n{d['brief']}\n\n# YOUR ASSIGNMENT\n{d['assignments']['AG-002']}\n\n"
                 "# TASK A — REFERENCE VIDEOS\nFind specific, recent TikTok and Instagram videos about business financing, "
@@ -271,7 +276,7 @@ class ReelsWorkflow(Workflow):
                  "questions, processes/checklists and objections. No fear-mongering or artificial controversy. "
                  "reference_ref_id = a V.. id whose mechanism genuinely fits, otherwise 'original'. List every financial claim "
                  f"the script will need verified (program rules, limits, eligibility) in claims_to_verify.\n\n{ctx}",
-                 work, schema=STRATEGY_SCHEMA)).output
+                 work, schema=STRATEGY_SCHEMA, spec=self._spec("strategist"))).output
             topics = s["topics"][:n]
             if len(topics) < n:
                 raise TaskError(f"strategist returned {len(topics)} topics, {n} required")
@@ -281,7 +286,7 @@ class ReelsWorkflow(Workflow):
                     t["reference_ref_id"] = "original"
 
             # T4 Researcher: fact verification
-            facts_spec = replace(R, max_turns=45, max_budget_usd=2.5)
+            facts_spec = self._spec("researcher", max_turns=45)
             claims = [{"script_id": t["script_id"], "claims": t["claims_to_verify"]} for t in topics]
             f_res = await self._task(run_id, tid("T4"), "researcher",
                 f"# TASK B — FINANCIAL FACT VERIFICATION\nVerify these claims with primary sources (SBA.gov, eCFR, "
@@ -322,7 +327,7 @@ class ReelsWorkflow(Workflow):
                   "Write issues and reasons in Spanish.\n\n"
                   f"# AUTOMATED CHECKS (computed by code)\n{_j(checks)}\n\n# VERIFIED CLAIMS\n{_j(facts['claims'])}\n\n"
                   f"# SOURCES\n{_j(facts['sources'])}\n\n# REFERENCES\n{_j(refs)}\n\n# SCRIPTS\n{_j(scripts)}\n\n{ctx}",
-                  work, schema=QA_SCHEMA)).output
+                  work, schema=QA_SCHEMA, spec=self._spec("supervisor"))).output
 
             self._save(client, run_id, day, d, refs, ref_report, topics, facts, scripts, checks, qa, out,
                        d["weekly_review_es"] if first_of_week else None)
@@ -368,7 +373,8 @@ class ReelsWorkflow(Workflow):
             "- why_selected_es / what_to_measure_es in Spanish (e.g. retention, shares, saves, profile visits, "
             "qualified DMs; never treat views as leads).\n\n"
             f"# TOPICS\n{_j(bt)}\n\n# REFERENCES\n{_j(bref)}\n\n# VERIFIED CLAIMS\n{_j(bclaims)}\n\n"
-            f"# SOURCES\n{_j(facts['sources'])}\n\n{ctx}", work, schema=SCRIPTS_SCHEMA)).output["scripts"]
+            f"# SOURCES\n{_j(facts['sources'])}\n\n{ctx}", work, schema=SCRIPTS_SCHEMA,
+            spec=self._spec("copywriter"))).output["scripts"]
         ids = [t["script_id"] for t in bt]
         for i, sc in enumerate(out[:len(ids)]):   # the system, not the model, owns the IDs
             if sc["script_id"] not in ids:
@@ -415,7 +421,7 @@ class ReelsWorkflow(Workflow):
                 f"# PREVIOUS TOP 5\n{_j(saved['qa']['top5'])}\n\n# OTHER SCRIPTS IN THIS DELIVERY\n{_j(others)}\n\n"
                 f"# AUTOMATED CHECKS\n{_j(checks)}\n\n# VERIFIED CLAIMS\n{_j(facts['claims'])}\n\n"
                 f"# SOURCES\n{_j(facts['sources'])}\n\n# REWRITTEN SCRIPTS\n{_j(new)}\n\n{ctx}",
-                work, schema=QA_SCHEMA)).output
+                work, schema=QA_SCHEMA, spec=self._spec("supervisor"))).output
         except (TaskError, BudgetExceeded) as e:
             log.error("redo failed: %s (previous delivery left unchanged)", e)
             return
