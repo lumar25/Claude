@@ -280,6 +280,8 @@ class ReelsWorkflow(Workflow):
             topics = s["topics"][:n]
             if len(topics) < n:
                 raise TaskError(f"strategist returned {len(topics)} topics, {n} required")
+            for i, t in enumerate(topics, 1):   # the system owns the IDs
+                t["script_id"] = f"R{i:02d}"
             valid_refs = {r["ref_id"] for r in refs}
             for t in topics:
                 if t["reference_ref_id"] not in valid_refs:
@@ -360,6 +362,9 @@ class ReelsWorkflow(Workflow):
             "amount_context must state which and add '(provisional)'.\n"
             "- Use ONLY claims verified/partially_verified below, with their correct_wording; mark hypothetical "
             "examples as hypothetical in the spoken text. Drop anything unverified. No sources in the spoken text.\n"
+            "- Do NOT add statements about what lenders, the SBA or franchisors do, require or look at unless that exact "
+            "point is among the verified claims below. Hedging ('commonly', 'generally') does not make an unverified claim "
+            "acceptable. Every fact_refs entry that is not 'hypothetical' must cite verified source IDs.\n"
             "- Never promise approval, fast funding or guaranteed results; never 'anyone can get this loan'. No "
             "invented cases, testimonials or Kevin experience.\n"
             "- CTA by goal: save / share with a partner or buyer / reply to a specific question / talk to Kevin via "
@@ -394,6 +399,10 @@ class ReelsWorkflow(Workflow):
         refs_file = json.loads((work / "references.json").read_text())
         refs, ref_report = refs_file["references"], refs_file["report"]
         facts = json.loads((work / "facts.json").read_text())
+        for i, t in enumerate(topics, 1):   # same ID normalisation as run_daily (older runs kept model IDs)
+            t["script_id"] = f"R{i:02d}"
+        for c in facts["claims"]:
+            c["script_id"] = re.sub(r"^KM-\d+-", "", c["script_id"])
         redo_topics = [t for t in topics if t["script_id"] in script_ids]
         if not redo_topics:
             raise SystemExit(f"none of {script_ids} found in this delivery")
@@ -607,7 +616,8 @@ class ReelsWorkflow(Workflow):
         for t in sorted(qa["top5"], key=lambda x: x["rank"]):
             s = sc_by.get(t["script_id"])
             if s:
-                L.append(f"{t['rank']}. **{s['full_id']}** — {s['topic']}: {t['reason_es']}")
+                flag = "" if s["qa_status"] == "ready_to_record" else " ⏳ PENDIENTE: corregir antes de grabar (ver su revisión)"
+                L.append(f"{t['rank']}. **{s['full_id']}**{flag} — {s['topic']}: {t['reason_es']}")
         tasks = self.store.tasks_for_run(run_id)
         L += ["", "## E. Registro y limitaciones", "",
               f"- Registro actualizado: {len(scripts)} guiones añadidos con estado **propuesto** (tabla `reel_scripts`).",

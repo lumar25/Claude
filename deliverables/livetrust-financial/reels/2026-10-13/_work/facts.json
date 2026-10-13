@@ -1,0 +1,989 @@
+{
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.sba.gov/partners/lenders/7a-loan-program/types-7a-loans",
+      "title": "SBA lender resources: Types of 7(a) loans",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search snippets only, because WebFetch to sba.gov was blocked. Snippets said: SBA guarantees up to 85% of loans of $150,000 or less and up to 75% of loans above $150,000. SBA Express has a 50% guaranty and a $500,000 maximum, and allows revolving lines of credit for up to 10 years. Express lenders have delegated authority to process, close, service and liquidate. The 36-hour figure for issuing a loan number appeared in a snippet, but the source was not clearly confirmed."
+    },
+    {
+      "id": "S2",
+      "url": "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility",
+      "title": "SBA lender resources: 7(a) terms, conditions and eligibility",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: uses include buying, refinancing or improving real estate; short- and long-term working capital; refinancing business debt; machinery and equipment; furniture, fixtures and supplies; and complete or partial changes of ownership. Maximum standard 7(a) loan is $5 million. SBA's maximum guaranteed exposure is $3.75 million."
+    },
+    {
+      "id": "S3",
+      "url": "https://www.congress.gov/crs-product/R41146",
+      "title": "Small Business Administration 7(a) Loan Guaranty Program (CRS)",
+      "publisher": "Congressional Research Service",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "CRS overview of 7(a) guaranty percentages, loan limits and fees. Cited as a secondary confirmation of the 85%/75% guaranty and the $5 million maximum."
+    },
+    {
+      "id": "S4",
+      "url": "https://www.congress.gov/crs-product/R41184",
+      "title": "Small Business Administration 504/CDC Loan Guaranty Program (CRS)",
+      "publisher": "Congressional Research Service",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: a third-party lender provides at least 50% of the financing, the CDC up to 40% through a 100% SBA-guaranteed debenture, and the applicant at least 10%. Applicants with less than two years of operations, or financing special-purpose property, add 5% (15% total). If both apply, the applicant puts in 20% and the CDC lends 30%."
+    },
+    {
+      "id": "S5",
+      "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-120/subpart-E/subject-group-ECFR37d4d3fb292c977/section-120.520",
+      "title": "eCFR :: 13 CFR 120.520 -- Purchase of 7(a) loan guarantees",
+      "publisher": "eCFR / National Archives",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: a lender may demand in writing that SBA honor its guarantee if the borrower has been in default on any installment for more than 60 calendar days (conditions apply). Snippet from the 13 CFR 120 Subpart E listing: 'SBA may utilize all legal means available, including offset and judicial remedies.'"
+    },
+    {
+      "id": "S6",
+      "url": "https://www.partneresi.com/wp-content/uploads/2023/10/SOP-50-10-8-effective-6.1.2025-Final.pdf",
+      "title": "SBA SOP 50 10 8, Lender and Development Company Loan Programs (effective 6/1/2025)",
+      "publisher": "U.S. SBA (copy hosted by Partner ESI)",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippets: delegated lenders (PLP, SBA Express) submit the guaranty request in E-Tran, and the SBA loan number is issued in E-Tran; for non-delegated loans the LGPC reviews and issues the loan number if approved. On leases: the term, including renewal options exercisable solely by the operating company, must be at least equal to the loan term. This is version 8, not 8.1."
+    },
+    {
+      "id": "S7",
+      "url": "https://www.naggl.org/sop-update-sba-publishes-sop-50-10-8-1-with-technical-policy-updates/",
+      "title": "SOP UPDATE: SBA Publishes SOP 50 10 8.1 with Technical Policy Updates",
+      "publisher": "NAGGL",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: SOP 50 10 8.1 was released August 14, 2026, reissued with technical updates September 25, 2026 (Information Notice 5000-882227), and is effective for loans receiving SBA loan numbers on or after October 1, 2026."
+    },
+    {
+      "id": "S8",
+      "url": "https://starfieldsmith.com/2025/08/best-practices-updated-collateral-rules-for-standard-7a-loans-in-50-10-8/",
+      "title": "Best Practices: Updated Collateral Rules for Standard 7(a) Loans in 50 10 8",
+      "publisher": "Starfield & Smith",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Industry commentary on SOP 50 10 8 collateral rules: no collateral required at $50,000 or less; lender's own policy above that for smaller loans; the maximum-extent-possible rule and personal real estate rule for larger loans."
+    },
+    {
+      "id": "S9",
+      "url": "https://sbaloanindex.com/guides/sba-loan-collateral/",
+      "title": "Do SBA Loans Require Collateral? The Rules by Loan Size",
+      "publisher": "SBA Loan Index",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: SBA does not require collateral on 7(a) Small or SBA Express loans of $50,000 or less. From $50,001 to $350,000, the lender follows its written policy for similar non-SBA loans. Express lenders may use their own policy above $50,000 up to $500,000. Lenders cannot decline an otherwise-eligible loan solely for insufficient collateral."
+    },
+    {
+      "id": "S10",
+      "url": "https://qoeagent.ai/sop-50-10-8-1/",
+      "title": "SOP 50 10 8.1: What Changes for SBA Business Acquisitions",
+      "publisher": "QoE Agent",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: under the prior SOP, a lender could do its own valuation when the business value (net of real estate and equipment) was $250,000 or less, unless there was a close relationship. Under 8.1, every change of ownership requires an independent Qualified Source valuation commissioned by and prepared for the lender."
+    },
+    {
+      "id": "S11",
+      "url": "https://starfieldsmith.com/2025/05/best-practices-a-review-of-equity-injection-requirements-under-sop-50-10-8/",
+      "title": "Best Practices: A Review of Equity Injection Requirements Under SOP 50 10 8",
+      "publisher": "Starfield & Smith",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: minimum 10% equity injection of total project costs for start-ups and complete changes of ownership. For partial changes of ownership, less than 10% is allowed if debt-to-worth is no greater than 9:1 before the change."
+    },
+    {
+      "id": "S12",
+      "url": "https://ebitcommunity.com/p/earnouts-in-smb-acquisitions-structures-sba-rules-and-workarounds",
+      "title": "SBA 7(a) Earnouts: The Rules and Seller-Note Alternatives",
+      "publisher": "EBIT Community",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: seller earnouts are prohibited because 7(a) acquisitions cannot use contingent or indeterminate price consideration. Buyer rebates tied to post-close performance are allowed."
+    },
+    {
+      "id": "S13",
+      "url": "https://www.taftlaw.com/news-events/law-bulletins/sba-franchise-directory-reintroduced-effective-june-1-2025/",
+      "title": "SBA Franchise Directory Reintroduced Effective June 1, 2025",
+      "publisher": "Taft Law",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: the Directory was dropped under SOP 50 10 7 (August 2023) and reintroduced by SOP 50 10 8 (June 1, 2025). Brands that meet the FTC franchise definition must be listed for their franchisees to get SBA financing. A secondary snippet mentioned a June 30, 2026 documentation deadline."
+    },
+    {
+      "id": "S14",
+      "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-436/subpart-C/section-436.5",
+      "title": "eCFR :: 16 CFR 436.5 -- Disclosure items",
+      "publisher": "eCFR / National Archives",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: Item 6 covers all other fees paid to the franchisor or its affiliates, or collected for a third party (royalties, advertising fees, transfer fees). Item 17 is a table on renewal, termination, transfer and dispute resolution. Item 20 gives outlet tables for the last three fiscal years and lists current and recent former franchisees. Items 5 and 12 are in the same section."
+    },
+    {
+      "id": "S15",
+      "url": "https://www.ftc.gov/business-guidance/resources/consumers-guide-buying-franchise",
+      "title": "A Consumer's Guide to Buying a Franchise",
+      "publisher": "Federal Trade Commission",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: 'You may have to pay the franchisor royalties based on a percentage of your weekly or monthly gross income... even if you are losing money.' The guide recommends talking to franchisees, but the exact quote was not retrieved."
+    },
+    {
+      "id": "S16",
+      "url": "https://www.franchiselawsolutions.com/learn/franchise-your-business/fdd-waiting-period",
+      "title": "What Is the FDD Disclosure Period?",
+      "publisher": "Franchise Law Solutions",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: the FDD must be given no less than 14 calendar days before the franchisee signs a binding agreement or pays any fee. There is a separate 7-day review period for materially changed agreements."
+    },
+    {
+      "id": "S17",
+      "url": "https://definitions.uslegal.com/c/conversion-franchise/",
+      "title": "Conversion Franchise Law and Legal Definition",
+      "publisher": "USLegal",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: a conversion franchise is a franchise system in which already existing independent businesses are converted into franchises."
+    },
+    {
+      "id": "S18",
+      "url": "https://iconic.co/blog/what-is-sde-sellers-discretionary-earnings/",
+      "title": "What Is SDE Sellers Discretionary Earnings: A Deep Dive",
+      "publisher": "Iconic",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary attributed this definition to IBBA: earnings before income taxes, non-operating and nonrecurring items, depreciation and amortization, interest, and one owner's total compensation, including benefits and personal expenses. EBITDA keeps a market-rate manager salary as a cost. The IBBA original was not retrieved."
+    },
+    {
+      "id": "S19",
+      "url": "https://gosbaloans.com/guide/asset-vs-stock-purchase/",
+      "title": "Asset vs Stock Purchase",
+      "publisher": "GoSBALoans",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: in an asset purchase you buy assets, not the legal entity, and generally do not inherit the seller's liabilities. In a stock purchase you acquire the entity, including its liabilities. Industry source, lower reliability."
+    },
+    {
+      "id": "S20",
+      "url": "https://www.44businesscapital.com/download.php?pdf=SBA-Form-1919-3-2026.pdf",
+      "title": "SBA Form 1919 (file named 3-2026)",
+      "publisher": "44 Business Capital (copy of SBA form)",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Title suggests a March 2026 revision of SBA Form 1919, the 7(a) Borrower Information Form. A separate snippet says Form 1919 collects information on the applicant, its owners, the loan request, existing indebtedness and prior government financing. An SBA-hosted copy (caweb.sba.gov) is Revised 09/20."
+    },
+    {
+      "id": "S21",
+      "url": "https://statementsready.com/blog/sba-form-159-fee-disclosure",
+      "title": "SBA Form 159: The Fee Disclosure Nobody Explains",
+      "publisher": "StatementsReady",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: SBA Form 159, the Fee Disclosure and Compensation Agreement, identifies every agent paid in connection with a 7(a) or 504 loan and what each was paid."
+    },
+    {
+      "id": "S22",
+      "url": "https://www.sba.gov/blog/writing-business-plan-your-roadmap-small-business-success",
+      "title": "Writing a Business Plan: Your Roadmap to Small Business Success",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: a traditional plan is comprehensive and commonly requested by lenders and investors. Sections may include executive summary, company description, market analysis and financial projections."
+    },
+    {
+      "id": "S23",
+      "url": "https://www.sba.gov/article/2024/03/04/sba-launches-enhanced-lender-match-platform",
+      "title": "SBA launches enhanced Lender Match platform (Archived news release 24-15)",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "SBA news release (March 4, 2024) about the enhanced Lender Match platform, which connects small businesses with participating SBA lenders."
+    },
+    {
+      "id": "S24",
+      "url": "https://statementsready.com/blog/sba-7a-personal-financial-statement-requirements",
+      "title": "SBA 7(a) Personal Financial Statement Requirements (2026)",
+      "publisher": "StatementsReady",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: Form 413 is completed by each proprietor; general partner; managing member of an LLC; each owner of 20% or more; and any person providing a guaranty. Related snippet: under 8.1, PFS dating changes from 120 days to 90 days."
+    },
+    {
+      "id": "S25",
+      "url": "https://windsoradvantage.com/news/sba-lending-post-sop-50-10-8-understanding-the-revitalized-credit-elsewhere-rule",
+      "title": "SBA Lending Post-SOP 50 10 8: Understanding the Revitalized Credit Elsewhere Rule",
+      "publisher": "Windsor Advantage",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: this is not a return to the former Personal Resources Test, but SOP 50 10 8 re-emphasizes that the lender must ensure the applicant and owners of 20% or more do not have readily available funds. It lists reasonable exceptions (retirement, education, medical, 24-month capital needs, working capital)."
+    },
+    {
+      "id": "S26",
+      "url": "https://nsdc.com/occupancy-requirements-of-an-sba-504-loan/",
+      "title": "What Are the Occupancy Requirements of an SBA 504 Loan?",
+      "publisher": "NSDC",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary citing 13 CFR 120.131: at least 51% occupancy for existing buildings; 60% for new construction, with conditions. 504 proceeds cannot fund working capital or inventory."
+    },
+    {
+      "id": "S27",
+      "url": "https://alloydev.org/sba-504-loan-maximum/",
+      "title": "SBA 504 Loan Maximum Guidelines",
+      "publisher": "Alloy Development (CDC)",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: the CDC portion may be up to 40% of project cost, with a maximum of $5.0 million ($5.5 million for qualifying manufacturing or energy projects). A CDC is a nonprofit certified and regulated by the SBA."
+    },
+    {
+      "id": "S28",
+      "url": "https://vetmyfranchise.com/blog/area-development-agreement-vs-single-unit-franchise",
+      "title": "Area Development Agreement vs Single-Unit Franchise",
+      "publisher": "VetMyFranchise",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Snippet: missing development deadlines could lose you territorial exclusivity or the agreement itself. Consequences vary by franchisor, and development fees are often non-refundable."
+    },
+    {
+      "id": "S29",
+      "url": "https://starfieldsmith.com/2025/12/understanding-sba-7a-loan-fees-and-costs/",
+      "title": "Understanding SBA 7(a) Loan Fees and Costs",
+      "publisher": "Starfield & Smith",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: lenders may pass the upfront guaranty fee to the borrower, and borrowers may use loan proceeds to pay it. The first disbursement cannot be made solely or mainly for that purpose."
+    },
+    {
+      "id": "S30",
+      "url": "https://www.analytics.loan/post/sop-50-10-8-1-for-lenders",
+      "title": "SOP 50 10 8.1 for Lenders: The Four Acquisition Categories",
+      "publisher": "analytics.loan",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Search summary: in a partial buyout, a selling owner who keeps any stake must give a full guaranty for at least two years. Industry interpretation of 8.1."
+    },
+    {
+      "id": "S31",
+      "url": "https://clearvaluelending.com/loans/business/sba-doubles-cumulative-loan-limit-10m-2026",
+      "title": "Can You Get a $10M SBA Loan? New 2026 Rule Explained",
+      "publisher": "Clear Value Lending",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Title only. It suggests a 2026 change to cumulative SBA loan limits (likely sector-specific). Not verified; flags that aggregate-limit statements may be out of date."
+    },
+    {
+      "id": "S32",
+      "url": "https://www.sba.gov/about-sba/loan-and-guaranty-centers/commercial-loan-service-center/",
+      "title": "Commercial Loan Service Center",
+      "publisher": "U.S. Small Business Administration",
+      "accessed_via": "WebSearch",
+      "relevant_excerpt": "Appeared in results about 7(a) loan processing and servicing centers. Snippet context: the LGPC processes guaranty applications for lenders without delegated authority."
+    }
+  ],
+  "claims": [
+    {
+      "script_id": "KM-20261013-R01",
+      "claim": "The 7(a) guaranty protects the lender against default and does not reduce what the borrower owes",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S5",
+        "S1"
+      ],
+      "correct_wording": "The SBA guarantees part of a 7(a) loan to the lender. If the borrower defaults, the lender can ask the SBA to buy the guaranteed portion. The borrower still owes the full debt. (13 CFR 120.520.) Note: WebFetch was blocked. Based on eCFR search snippets only."
+    },
+    {
+      "script_id": "KM-20261013-R01",
+      "claim": "7(a) guaranty percentages: 85% / 75%",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "correct_wording": "As of Oct 2026, the SBA guarantees up to 85% of 7(a) loans of $150,000 or less and up to 75% of loans over $150,000. SBA Express is 50%. Source: SBA.gov. These figures can change."
+    },
+    {
+      "script_id": "KM-20261013-R01",
+      "claim": "Owners of 20% or more must personally guarantee",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S5",
+        "S24",
+        "S30"
+      ],
+      "correct_wording": "Owners of 20% or more generally must give a full, unlimited personal guaranty (13 CFR 120.160; SOP 50 10 8.1, effective for loan numbers issued on or after Oct 1, 2026). Lenders can ask other people to guarantee too. I did not get the exact SOP section number. Do not cite a section."
+    },
+    {
+      "script_id": "KM-20261013-R01",
+      "claim": "After paying the lender, the SBA may pursue recovery from the borrower and guarantors",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S5"
+      ],
+      "correct_wording": "After a default, the remaining debt is still owed by the borrower and guarantors. The SBA 'may utilize all legal means available, including offset and judicial remedies' (13 CFR Part 120, Subpart E). SOP 50 57 was not checked. Do not cite it."
+    },
+    {
+      "script_id": "KM-20261013-R02",
+      "claim": "504 structure: bank first lien, CDC second lien funded by an SBA-guaranteed debenture, borrower equity",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S4",
+        "S27"
+      ],
+      "correct_wording": "In a 504 loan, a third-party lender (usually a bank) finances part of the project with a first lien. A CDC finances part with a second lien, funded by a debenture that the SBA guarantees 100%. The borrower puts in equity."
+    },
+    {
+      "script_id": "KM-20261013-R02",
+      "claim": "Typical 50/40/10 split, with higher borrower contribution in some cases",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S4"
+      ],
+      "correct_wording": "As of Oct 2026, the typical split is 50% lender, up to 40% CDC and at least 10% borrower. The borrower puts in 15% if the business has less than two years of operating history or the property is special-purpose. If both apply, the borrower puts in 20%. Source: CRS R41184."
+    },
+    {
+      "script_id": "KM-20261013-R02",
+      "claim": "504 eligible uses are fixed assets, not working capital",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S26",
+        "S27"
+      ],
+      "correct_wording": "504 loans pay for long-term fixed assets, such as real estate and long-life equipment. Working capital and inventory are not eligible uses. Note: SBA.gov could not be opened. This is based on CDC and industry sources."
+    },
+    {
+      "script_id": "KM-20261013-R02",
+      "claim": "Owner-occupancy requirement",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S26"
+      ],
+      "correct_wording": "The business must occupy at least 51% of an existing building, or at least 60% of a newly built one, with further occupancy steps over time (13 CFR 120.131, as cited by a CDC)."
+    },
+    {
+      "script_id": "KM-20261013-R02",
+      "claim": "504 maximum debenture",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S27"
+      ],
+      "correct_wording": "If used: the CDC/SBA portion is generally capped at $5 million per project, or $5.5 million for qualifying manufacturing or energy projects (CDC source, not SBA.gov). Not confirmed on SBA.gov. I recommend leaving it out."
+    },
+    {
+      "script_id": "KM-20261013-R02",
+      "claim": "What a CDC is",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S27"
+      ],
+      "correct_wording": "A Certified Development Company (CDC) is a nonprofit that the SBA certifies and regulates to deliver 504 loans. CDCs generally serve a defined local area, but that part was not confirmed in snippets."
+    },
+    {
+      "script_id": "KM-20261013-R03",
+      "claim": "SBA Express maximum loan amount",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S1"
+      ],
+      "correct_wording": "As of Oct 2026, SBA Express loans go up to $500,000 (SBA.gov)."
+    },
+    {
+      "script_id": "KM-20261013-R03",
+      "claim": "Express guaranty compared with standard 7(a)",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "correct_wording": "SBA Express carries a 50% guaranty. Standard 7(a) is up to 85% for loans of $150,000 or less and 75% above that. As of Oct 2026."
+    },
+    {
+      "script_id": "KM-20261013-R03",
+      "claim": "Under Express, the lender makes the credit decision and the SBA responds to the guaranty request",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S1",
+        "S6"
+      ],
+      "correct_wording": "SBA Express lenders have delegated authority. They decide on credit using their own procedures and then send the guaranty request to the SBA through E-Tran. Leave out the '36 hours' figure: it was only in a snippet, and it would describe the SBA issuing a loan number, not funding."
+    },
+    {
+      "script_id": "KM-20261013-R03",
+      "claim": "Express supports revolving lines of credit",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S1"
+      ],
+      "correct_wording": "Yes. SBA Express can be used for revolving lines of credit, with terms up to 10 years (SBA.gov, as of Oct 2026)."
+    },
+    {
+      "script_id": "KM-20261013-R03",
+      "claim": "Standard 7(a) maximum loan amount",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "correct_wording": "As of Oct 2026, the standard 7(a) maximum is $5 million (SBA.gov)."
+    },
+    {
+      "script_id": "KM-20261013-R04",
+      "claim": "General 7(a) process: lender underwrites, then submits for a guaranty or uses delegated authority, and the SBA issues a loan number",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S6",
+        "S1",
+        "S32"
+      ],
+      "correct_wording": "The lender underwrites the loan. Lenders with delegated authority (such as PLP or SBA Express) approve it themselves and send it through E-Tran, where the SBA assigns a loan number. For other lenders, the SBA's Loan Guaranty Processing Center reviews the request and issues the loan number if approved."
+    },
+    {
+      "script_id": "KM-20261013-R04",
+      "claim": "Common closing items",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S21",
+        "S10",
+        "S6"
+      ],
+      "correct_wording": "If an agent or packager is paid, SBA Form 159 (Fee Disclosure and Compensation Agreement) is required. Change-of-ownership deals need an independent business valuation. Insurance and lien filings are standard, but I found no official snippet listing them, so present them as 'commonly'."
+    },
+    {
+      "script_id": "KM-20261013-R04",
+      "claim": "A commitment letter commonly lists conditions to be met before closing",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "No source was retrieved. If used, phrase it as 'Lenders commonly list the conditions to meet before closing in a commitment letter.' This varies by lender."
+    },
+    {
+      "script_id": "KM-20261013-R05",
+      "claim": "The SBA does not decline a loan solely because of inadequate collateral",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S9",
+        "S8"
+      ],
+      "correct_wording": "Under SOP 50 10 8, an otherwise-eligible loan is not to be declined solely because collateral is inadequate (industry sources; the exact SOP wording and section were not retrieved). Paraphrase it rather than quote it."
+    },
+    {
+      "script_id": "KM-20261013-R05",
+      "claim": "Collateral thresholds",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S9",
+        "S8"
+      ],
+      "correct_wording": "As of Oct 2026, no collateral is required for 7(a) loans of $50,000 or less. From $50,001 to $350,000 (up to $500,000 for SBA Express), lenders follow their own collateral policy for similar non-SBA loans. Above that, lenders must take available collateral to the maximum extent possible. Industry summaries of SOP 50 10 8; confirm in 8.1."
+    },
+    {
+      "script_id": "KM-20261013-R05",
+      "claim": "Liens on personal real estate (25% equity)",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S8"
+      ],
+      "correct_wording": "If business assets don't fully secure a larger loan, lenders must take available equity in the owners' personal real estate. A personal residence is not required when the equity is less than 25% of its market value. This comes from a snippet with a mixed source. Confirm under 8.1 before using."
+    },
+    {
+      "script_id": "KM-20261013-R05",
+      "claim": "Do the rules differ for Express vs. standard 7(a)?",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S9"
+      ],
+      "correct_wording": "Yes. SBA Express lenders may apply their own collateral policy for loans over $50,000 up to $500,000."
+    },
+    {
+      "script_id": "KM-20261013-R06",
+      "claim": "FDD Item 6 discloses other fees, including royalties and ad-fund contributions",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S14"
+      ],
+      "correct_wording": "Under the FTC Franchise Rule (16 CFR 436.5(f)), Item 6 discloses other recurring or occasional fees paid to the franchisor or its affiliates, such as royalties and advertising fees."
+    },
+    {
+      "script_id": "KM-20261013-R06",
+      "claim": "Royalties are commonly a percentage of gross sales",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S15"
+      ],
+      "correct_wording": "The FTC guide says: 'You may have to pay the franchisor royalties based on a percentage of your weekly or monthly gross income.' For ad funds, say only that the fee basis is shown in Item 6."
+    },
+    {
+      "script_id": "KM-20261013-R06",
+      "claim": "Lenders evaluate repayment from cash flow after expenses, including franchise fees",
+      "claim_type": "lender_varies",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "No source was retrieved. Hedge it: 'Lenders generally look at whether cash flow after operating costs, including ongoing franchise fees, can cover loan payments.' Label all figures hypothetical."
+    },
+    {
+      "script_id": "KM-20261013-R07",
+      "claim": "Item 17 covers transfer; Item 6 may list transfer fees",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S14"
+      ],
+      "correct_wording": "Item 17 summarizes renewal, termination, transfer and dispute-resolution terms. Item 6 may list a transfer fee (16 CFR 436.5)."
+    },
+    {
+      "script_id": "KM-20261013-R07",
+      "claim": "Business valuation required above certain thresholds",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S10"
+      ],
+      "correct_wording": "Under SOP 50 10 8.1 (effective Oct 1, 2026), every change of ownership reportedly needs an independent valuation from a qualified source, commissioned by the lender. The old $250,000 exception no longer applies. Industry source only, so confirm before airing. Do not describe it as 'above a threshold'."
+    },
+    {
+      "script_id": "KM-20261013-R07",
+      "claim": "Equity injection minimums for start-ups vs. changes of ownership",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S11"
+      ],
+      "correct_wording": "Under SOP 50 10 8, the minimum is 10% of total project costs for start-ups (operating one year or less) and for complete changes of ownership. Whether 8.1 kept this is not confirmed, and 8.1 limits seller notes to at most half of the injection. Leave it out or attribute it to SOP 50 10 8."
+    },
+    {
+      "script_id": "KM-20261013-R07",
+      "claim": "Franchise eligibility through the SBA Franchise Directory",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S13"
+      ],
+      "correct_wording": "Since SOP 50 10 8 (June 1, 2025), a brand that meets the FTC franchise definition must be on the SBA Franchise Directory for its franchisees to get SBA financing. As of Oct 2026, check the current Directory on SBA.gov."
+    },
+    {
+      "script_id": "KM-20261013-R08",
+      "claim": "Item 20 outlet data and franchisee contact lists",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S14"
+      ],
+      "correct_wording": "Item 20 (16 CFR 436.5(t)) gives outlet data and lists current franchisees and franchisees who left the system recently. My understanding of the rule is 'during the last fiscal year', but snippets did not confirm that exact wording."
+    },
+    {
+      "script_id": "KM-20261013-R08",
+      "claim": "The FTC guide recommends talking to current and former franchisees",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S15"
+      ],
+      "correct_wording": "The FTC guide encourages talking with current and former franchisees. I could not retrieve the exact wording, so paraphrase and do not use quotation marks."
+    },
+    {
+      "script_id": "KM-20261013-R08",
+      "claim": "Franchisee conversations help build realistic projections",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Advice to consider, not a rule: 'Talking with franchisees may help you build more realistic projections to share with a lender.'"
+    },
+    {
+      "script_id": "KM-20261013-R09",
+      "claim": "FDD disclosures for development agreements (Items 5, 6, 12)",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S14",
+        "S28"
+      ],
+      "correct_wording": "Development fees are disclosed in Items 5 and 6, and territory rights in Item 12 (16 CFR 436.5). The development schedule itself is set out in the development agreement."
+    },
+    {
+      "script_id": "KM-20261013-R09",
+      "claim": "Missing the development schedule may cost territorial rights",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S28"
+      ],
+      "correct_wording": "Depending on the agreement, missing development deadlines may mean losing territorial exclusivity or the development agreement itself."
+    },
+    {
+      "script_id": "KM-20261013-R09",
+      "claim": "Each new unit is evaluated on its own needs and on overall cash flow",
+      "claim_type": "lender_varies",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Hedge it: 'Lenders commonly look at each new unit's funding needs along with the borrower's overall cash flow and debt. Practices vary by lender.'"
+    },
+    {
+      "script_id": "KM-20261013-R09",
+      "claim": "Affiliation and aggregate loan limits",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S2",
+        "S31"
+      ],
+      "correct_wording": "SBA.gov states a maximum guaranteed exposure of $3.75 million per borrower, including affiliates. There are reports of 2026 changes to cumulative limits that I could not verify. I recommend leaving this out."
+    },
+    {
+      "script_id": "KM-20261013-R10",
+      "claim": "Conversion franchise definition",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S17"
+      ],
+      "correct_wording": "General definition: a conversion franchise is an existing independent business that joins a franchise system and adopts its brand and operating system."
+    },
+    {
+      "script_id": "KM-20261013-R10",
+      "claim": "The FDD still applies and the 14-day rule",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S16",
+        "S14"
+      ],
+      "correct_wording": "Under the FTC Franchise Rule (16 CFR 436), the franchisor generally must give the FDD at least 14 calendar days before the buyer signs a binding agreement or pays any fee. Exemptions exist."
+    },
+    {
+      "script_id": "KM-20261013-R10",
+      "claim": "Brand must be on the SBA Franchise Directory",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S13"
+      ],
+      "correct_wording": "If the arrangement meets the FTC franchise definition, the brand must be on the SBA Franchise Directory to be eligible for SBA financing (since June 1, 2025). Check the current listing."
+    },
+    {
+      "script_id": "KM-20261013-R10",
+      "claim": "Lenders look at historical cash flow plus new franchise fees",
+      "claim_type": "lender_varies",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Hedge it: 'A lender would likely look at the business's past cash flow and how the new ongoing franchise fees would affect it.'"
+    },
+    {
+      "script_id": "KM-20261013-R11",
+      "claim": "SDE definition",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S18"
+      ],
+      "correct_wording": "SDE is generally defined as pre-tax earnings before interest, depreciation and amortization, plus one owner's total compensation and discretionary or one-time items. This definition is commonly credited to the IBBA, but I did not open the IBBA original."
+    },
+    {
+      "script_id": "KM-20261013-R11",
+      "claim": "EBITDA definition",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S18"
+      ],
+      "correct_wording": "EBITDA is earnings before interest, taxes, depreciation and amortization. In valuation it usually keeps a market-rate manager's salary as an expense."
+    },
+    {
+      "script_id": "KM-20261013-R11",
+      "claim": "SDE is used for smaller businesses and EBITDA for larger ones",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S18"
+      ],
+      "correct_wording": "SDE is commonly used for smaller owner-run businesses and EBITDA for larger businesses with professional management. Do not give a dollar cutoff."
+    },
+    {
+      "script_id": "KM-20261013-R11",
+      "claim": "Lenders verify earnings against tax returns and add-backs need documentation",
+      "claim_type": "lender_varies",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S6"
+      ],
+      "correct_wording": "Lenders generally check earnings against tax returns, and add-backs usually need documentation. SOP 50 10 8 requires lenders to check the seller information the valuator used against IRS transcripts."
+    },
+    {
+      "script_id": "KM-20261013-R12",
+      "claim": "Lenders review the seller's financial statements and tax returns",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S6",
+        "S10"
+      ],
+      "correct_wording": "In SBA change-of-ownership deals, lenders review the seller's financial information. Under SOP 50 10 8, they verify it against IRS tax transcripts. The exact document list under 8.1 was not retrieved."
+    },
+    {
+      "script_id": "KM-20261013-R12",
+      "claim": "Lease term vs. loan term",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S6"
+      ],
+      "correct_wording": "Under SOP 50 10 8, the lease term, including renewal options the business alone can exercise, should be at least as long as the loan term. Confirm whether 8.1 changed this."
+    },
+    {
+      "script_id": "KM-20261013-R12",
+      "claim": "General diligence areas",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S19"
+      ],
+      "correct_wording": "Common diligence areas include contracts, leases, cash flow, inventory, and zoning and environmental matters. The SBA.gov page itself could not be retrieved."
+    },
+    {
+      "script_id": "KM-20261013-R13",
+      "claim": "7(a) can finance a partial change of ownership",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S2",
+        "S11"
+      ],
+      "correct_wording": "Yes. SBA.gov lists complete or partial changes of ownership as eligible 7(a) uses (as of Oct 2026)."
+    },
+    {
+      "script_id": "KM-20261013-R13",
+      "claim": "Equity and guaranty rules for partial changes of ownership",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S11",
+        "S30"
+      ],
+      "correct_wording": "Under SOP 50 10 8, a partial buyout may need less than 10% equity if debt-to-worth is 9:1 or better before the change. Industry sources say a selling owner who keeps any stake must give a full guaranty for at least two years. Industry interpretation only, so confirm in SOP 8.1 or leave it out."
+    },
+    {
+      "script_id": "KM-20261013-R13",
+      "claim": "Business valuation thresholds",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S10"
+      ],
+      "correct_wording": "Under 8.1, every change of ownership reportedly needs an independent qualified-source valuation, with no dollar threshold."
+    },
+    {
+      "script_id": "KM-20261013-R14",
+      "claim": "Asset vs. stock purchase and liabilities",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S19"
+      ],
+      "correct_wording": "Generally, an asset buyer does not take on the seller's liabilities, while a stock buyer takes the whole company, liabilities included. Exceptions exist, so get legal advice."
+    },
+    {
+      "script_id": "KM-20261013-R14",
+      "claim": "Seller debts are paid off at closing to release liens",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Hedge it: 'Seller debts secured by business assets are commonly paid off at closing so the liens can be released.'"
+    },
+    {
+      "script_id": "KM-20261013-R14",
+      "claim": "SOP lease term requirement",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S6"
+      ],
+      "correct_wording": "Same as R12: under SOP 50 10 8, the lease term including the business's own renewal options should be at least the loan term. Confirm for 8.1."
+    },
+    {
+      "script_id": "KM-20261013-R14",
+      "claim": "Lease assignment needs landlord consent",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Hedge it: 'Many leases require the landlord's consent to assign the lease. Check the lease terms.'"
+    },
+    {
+      "script_id": "KM-20261013-R15",
+      "claim": "Earn-outs in 7(a) change-of-ownership deals",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S12"
+      ],
+      "correct_wording": "Under SOP 50 10 8/8.1, seller earn-outs are reportedly not allowed in 7(a) change-of-ownership deals, because the price can't be contingent. Buyer rebates are allowed. The exact SOP section was not retrieved."
+    },
+    {
+      "script_id": "KM-20261013-R15",
+      "claim": "Earn-out definition",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S12"
+      ],
+      "correct_wording": "An earn-out is a contingent future payment to the seller that depends on how the business performs after closing."
+    },
+    {
+      "script_id": "KM-20261013-R15",
+      "claim": "Difference from a seller note",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "A seller note has a fixed principal and set repayment terms. Refer to the earlier scripts for standby rules."
+    },
+    {
+      "script_id": "KM-20261013-R16",
+      "claim": "Proceeds must go to eligible uses listed in the authorization",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S20",
+        "S2"
+      ],
+      "correct_wording": "SBA loan proceeds must go to eligible uses. Form 1919 asks what the funds are for. That the authorization lists use of proceeds is standard, but no snippet confirmed it."
+    },
+    {
+      "script_id": "KM-20261013-R16",
+      "claim": "Eligible 7(a) uses",
+      "claim_type": "program_rule",
+      "verdict": "verified",
+      "source_ids": [
+        "S2"
+      ],
+      "correct_wording": "As of Oct 2026, 7(a) loans can pay for working capital; equipment, furniture and fixtures; buying, building or improving real estate; changes of ownership; and refinancing business debt under certain conditions."
+    },
+    {
+      "script_id": "KM-20261013-R16",
+      "claim": "Sources and uses",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Hedge it: 'Lenders commonly use a sources-and-uses table, where the total sources (loan, equity, any seller financing) match the total uses.'"
+    },
+    {
+      "script_id": "KM-20261013-R16",
+      "claim": "The guaranty fee can be financed",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S29"
+      ],
+      "correct_wording": "Borrowers may generally pay the upfront guaranty fee from loan proceeds, with conditions on the first disbursement. Fees change each fiscal year."
+    },
+    {
+      "script_id": "KM-20261013-R17",
+      "claim": "SBA.gov business plan guidance",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S22"
+      ],
+      "correct_wording": "SBA.gov describes a traditional business plan that may include an executive summary, company description, market analysis and financial projections, among other sections."
+    },
+    {
+      "script_id": "KM-20261013-R17",
+      "claim": "The SOP requires a business plan or projections",
+      "claim_type": "program_rule",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Not verified. Leave it out, or say 'lenders commonly ask for projections'."
+    },
+    {
+      "script_id": "KM-20261013-R17",
+      "claim": "Projections should state their assumptions",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Phrase as advice: 'It's good practice to explain the assumptions behind your projections.'"
+    },
+    {
+      "script_id": "KM-20261013-R18",
+      "claim": "Interim financial statements definition",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S29"
+      ],
+      "correct_wording": "Interim financial statements are current year-to-date statements, usually a profit and loss statement and a balance sheet."
+    },
+    {
+      "script_id": "KM-20261013-R18",
+      "claim": "Form 1919 asks about existing business debt",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S20"
+      ],
+      "correct_wording": "SBA Form 1919 collects information on existing indebtedness. A copy dated 3/2026 appears to be the current version, but confirm on SBA.gov."
+    },
+    {
+      "script_id": "KM-20261013-R18",
+      "claim": "How current interim financials must be",
+      "claim_type": "program_rule",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Leave this out. (Only the personal financial statement dating rule turned up: 90 days under 8.1.)"
+    },
+    {
+      "script_id": "KM-20261013-R18",
+      "claim": "A debt schedule is used to calculate total debt service",
+      "claim_type": "general_preparation",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Hedge it: 'Lenders commonly use a debt schedule to work out total debt payments (see DSCR).'"
+    },
+    {
+      "script_id": "KM-20261013-R19",
+      "claim": "Form 413 required from certain owners",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S24"
+      ],
+      "correct_wording": "SBA Form 413 (Personal Financial Statement) is completed by each proprietor, general partner, LLC managing member, owner of 20% or more, and any guarantor. Under 8.1, it must be dated within 90 days. I did not confirm the current form edition."
+    },
+    {
+      "script_id": "KM-20261013-R19",
+      "claim": "Personal guaranty for owners of 20% or more",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S5",
+        "S24"
+      ],
+      "correct_wording": "Same as R01: owners of 20% or more generally must give a full personal guaranty."
+    },
+    {
+      "script_id": "KM-20261013-R19",
+      "claim": "Personal resources / liquidity",
+      "claim_type": "program_rule",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S25"
+      ],
+      "correct_wording": "The old Personal Resources Test has not returned. But under SOP 50 10 8, lenders must still check that the applicant and owners of 20% or more don't have readily available funds that make the SBA loan unnecessary (the 'credit elsewhere' test), with reasonable exceptions."
+    },
+    {
+      "script_id": "KM-20261013-R19",
+      "claim": "Lenders consider owners' credit history",
+      "claim_type": "lender_varies",
+      "verdict": "not_verified",
+      "source_ids": [],
+      "correct_wording": "Hedge it: 'Lenders generally review the owners' credit history.' Give no score figures."
+    },
+    {
+      "script_id": "KM-20261013-R20",
+      "claim": "General preparation guidance and Lender Match",
+      "claim_type": "general_preparation",
+      "verdict": "partially_verified",
+      "source_ids": [
+        "S23"
+      ],
+      "correct_wording": "Lender Match is a free SBA tool that connects businesses with participating SBA lenders (enhanced in March 2024). It does not approve loans and is not an endorsement of any lender. I could not confirm its status as of Oct 2026. Label all characters hypothetical."
+    }
+  ],
+  "rejected_sources": []
+}

@@ -257,3 +257,88 @@
 2026-10-12 11:35:26,165 INFO    creative_hq.workflow [T6r1] AG-006 Quality Supervisor — Re-review rewritten scripts ['R16', 'R17', 'R18', 'R19', 'R20']
 2026-10-12 11:36:50,092 INFO    creative_hq.workflow      done: $0.459, 2 turns, 0 tool calls
 2026-10-12 11:36:50,102 INFO    creative_hq.reels REELS REDO done | run total $7.457
+2026-10-13 11:23:34,240 INFO    creative_hq.reels REELS RUN 20261013-082334-reels-4f27 | 2026-10-13 | 20 scripts | cap $14.00
+2026-10-13 11:23:34,268 INFO    creative_hq.workflow [T1] AG-001 Creative Director — Daily brief + weekly review
+2026-10-13 11:24:41,548 INFO    creative_hq.workflow      done: $0.196, 2 turns, 0 tool calls
+2026-10-13 11:24:41,551 INFO    creative_hq.workflow [T2] AG-002 Research Specialist — Research recent TikTok/Instagram reference videos
+2026-10-13 11:24:50,942 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com \"SBA loan\" buy a business"}
+2026-10-13 11:24:51,052 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com \"SBA 7(a)\" loan explained"}
+2026-10-13 11:24:51,634 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:instagram.com/reel SBA loan"}
+2026-10-13 11:24:51,639 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com franchise financing SBA"}
+2026-10-13 11:24:59,467 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ \"buy a business\" SBA down payment seller note"}
+2026-10-13 11:24:59,867 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ \"SDE\" buying a business"}
+2026-10-13 11:25:00,318 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ \"SBA 504\" loan"}
+2026-10-13 11:25:00,751 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ franchise \"FDD\" franchisees"}
+2026-10-13 11:25:12,222 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ franchise royalties \"ad fund\" cash flow"}
+2026-10-13 11:25:12,677 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ \"due diligence\" buying a business"}
+2026-10-13 11:25:13,127 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ \"SBA loan\" 2026"}
+2026-10-13 11:25:13,504 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:instagram.com reel \"SBA loan\" buy a business"}
+2026-10-13 11:25:22,843 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "instagram.com/reel SBA 7a loan business acquisition"}
+2026-10-13 11:25:23,480 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ \"working capital\" SBA lender small business owner"}
+2026-10-13 11:25:23,984 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ \"business plan\" lender loan SBA what lenders look for"}
+2026-10-13 11:25:24,375 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ earn-out buying a business seller"}
+2026-10-13 11:25:33,620 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "\"instagram.com/reel\" franchise financing"}
+2026-10-13 11:25:34,214 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:instagram.com/reel buying a business SBA"}
+2026-10-13 11:25:34,573 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ \"multi-unit\" franchise owner financing"}
+2026-10-13 11:25:34,864 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ \"SBA Express\" loan"}
+2026-10-13 11:25:44,608 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "instagram reel \"SBA\" loan \"buy a business\" down payment equity injection"}
+2026-10-13 11:25:45,056 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ partner buyout SBA loan"}
+2026-10-13 11:25:45,557 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ \"buy a franchise\" loan bank liquid capital net worth"}
+2026-10-13 11:25:46,102 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ \"seller financing\" SBA \"buy a business\" questions to ask seller"}
+2026-10-13 11:25:59,468 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:instagram.com/reel/ franchise SBA loan"}
+2026-10-13 11:25:59,853 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "site:tiktok.com/@ SBA loan myth lender collateral"}
+2026-10-13 11:28:45,163 INFO    creative_hq.workflow      done: $1.260, 28 turns, 26 tool calls
+2026-10-13 11:28:45,173 INFO    creative_hq.reels      references: 29 kept (72h: 0, 7d: 0, 30d: 0), 0 rejected
+2026-10-13 11:28:45,177 INFO    creative_hq.workflow [T3] AG-003 Content Strategist — Select 20 varied, non-repetitive topics
+2026-10-13 11:31:39,431 INFO    creative_hq.workflow      done: $0.587, 2 turns, 0 tool calls
+2026-10-13 11:31:39,440 INFO    creative_hq.workflow [T4] AG-002 Research Specialist — Verify financial claims with primary sources
+2026-10-13 11:31:48,937 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA SOP 50 10 8 current version 2026 technical update"}
+2026-10-13 11:31:50,114 INFO    creative_hq.runner     AG-002 -> WebFetch {"url": "https://www.sba.gov/funding-programs/loans/7a-loans", "prompt": "Extract: maximum loan amounts, guaranty percentages, SBA Express max and guaranty, eli
+2026-10-13 11:31:51,013 INFO    creative_hq.runner     AG-002 -> WebFetch {"url": "https://www.sba.gov/funding-programs/loans/504-loans", "prompt": "Extract: structure (lender/CDC/borrower), percentages, eligible and ineligible uses, 
+2026-10-13 11:31:58,541 INFO    creative_hq.runner     AG-002 -> WebFetch {"url": "https://www.edisonba.com/articles/new-sba-7-a-loan-program-requirements-effective-october-1-2026", "prompt": "Extract all specifics: equity injection (
+2026-10-13 11:31:59,227 INFO    creative_hq.runner     AG-002 -> WebFetch {"url": "https://www.naggl.org/sop-update-sba-publishes-sop-50-10-8-1-with-technical-policy-updates/", "prompt": "Extract version, effective date, information n
+2026-10-13 11:32:04,792 INFO    creative_hq.runner     AG-002 -> WebFetch {"url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-436/subpart-C/section-436.5", "prompt": "Quote Item 5, 6, 12, 17, 20 key text, especi
+2026-10-13 11:32:07,443 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA 7(a) guaranty 85% loans $150,000 or less 75% greater; SBA Express 50% guaranty maximum $500,000"}
+2026-10-13 11:32:08,188 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SOP 50 10 8.1 equity injection change of ownership partial seller guarantee earn-out business valuation $250,000"}
+2026-10-13 11:32:08,878 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SOP 50 10 8 collateral $50,000 not required \"maximum extent possible\" 25% equity personal residence not decline solely inadequate collateral"}
+2026-10-13 11:32:20,672 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SOP 50 10 8 collateral requirements loans $50,000 or less not required $500,000 SBA Express collateral lender policies"}
+2026-10-13 11:32:21,365 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SOP 50 10 8 business valuation required change of ownership $250,000 or relationship seller buyer independent qualified source"}
+2026-10-13 11:32:22,000 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA 504 loan 50% lender 40% CDC 10% borrower new business special purpose 15% 20% owner occupy 51% 60%"}
+2026-10-13 11:32:39,232 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA 504 debenture maximum $5 million $5.5 million manufacturing energy CDC nonprofit certified working capital not eligible 504"}
+2026-10-13 11:32:39,385 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA Express revolving line of credit maximum $500,000 lender delegated authority SBA responds 36 hours 7(a) maximum $5 million"}
+2026-10-13 11:32:39,604 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA 7(a) personal guaranty 20% owners SBA Form 413 personal financial statement required 20 percent personal resources test eliminated SOP 50 10 8"}
+2026-10-13 11:32:58,889 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "16 CFR 436.5 Item 6 other fees royalty advertising; Item 20 outlets contact information franchisees left system last fiscal year; Item 17 transfer"}
+2026-10-13 11:32:59,391 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "FTC Consumer Guide to Buying a Franchise talk to current and former franchisees royalties percentage of gross sales"}
+2026-10-13 11:32:59,929 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA Franchise Directory discontinued replaced SOP 50 10 8 franchise eligibility 2026"}
+2026-10-13 11:33:18,648 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "FTC franchise rule 14 calendar days before signing FDD; conversion franchise definition existing independent business"}
+2026-10-13 11:33:19,145 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "seller's discretionary earnings definition IBBA owner compensation add-backs EBITDA smaller businesses"}
+2026-10-13 11:33:19,638 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA.gov \"buy an existing business\" asset purchase stock purchase liabilities due diligence"}
+2026-10-13 11:33:33,653 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SOP 50 10 8 lease term must equal loan term including options change of ownership seller tax returns financial statements interim 180 days"}
+2026-10-13 11:33:34,397 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA Form 1919 business indebtedness existing debt; SBA Form 159 fee disclosure agent; guaranty fee financed in loan proceeds 7(a)"}
+2026-10-13 11:33:34,976 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA Lender Match tool 2026; sba.gov write your business plan traditional business plan sections executive summary market analysis financial projectio
+2026-10-13 11:33:53,962 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "13 CFR 120 SBA guarantee purchase borrower remains liable SBA recovery Treasury Offset guarantors 7(a) default"}
+2026-10-13 11:33:54,959 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SOP 50 10 8 earnouts prohibited \"earn-out\" change of ownership; partial change of ownership redemption equity injection 10% SOP 50 10 8.1 business 
+2026-10-13 11:33:55,680 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "7(a) eligible use of proceeds working capital equipment real estate refinance acquisition sba.gov; SBA maximum $5 million aggregate guaranteed $3.75 
+2026-10-13 11:34:30,885 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "area development agreement fail development schedule lose territorial exclusivity FDD Item 12 Item 5 development fee"}
+2026-10-13 11:34:31,040 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA 504 owner occupy 51% existing building 60% new construction; 504 working capital ineligible 13 CFR 120.882"}
+2026-10-13 11:34:31,078 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA 7(a) upfront guaranty fee may be included in loan proceeds financed; interim financial statements definition year-to-date balance sheet income st
+2026-10-13 11:34:44,396 INFO    creative_hq.runner     AG-002 -> WebSearch {"query": "SBA 7(a) Preferred Lender Program delegated authority loan number E-Tran SBA Loan Authorization lender underwrites nondelegated loan processing cente
+2026-10-13 11:37:07,239 INFO    creative_hq.workflow      done: $1.576, 33 turns, 31 tool calls
+2026-10-13 11:37:07,297 INFO    creative_hq.reels      fact sources: 32 kept, 0 rejected; claims verified: 59/73
+2026-10-13 11:37:07,303 INFO    creative_hq.workflow [T5a] AG-004 Copywriter — Write scripts batch 1
+2026-10-13 11:37:07,309 INFO    creative_hq.workflow [T5b] AG-004 Copywriter — Write scripts batch 2
+2026-10-13 11:37:07,314 INFO    creative_hq.workflow [T5c] AG-004 Copywriter — Write scripts batch 3
+2026-10-13 11:37:07,320 INFO    creative_hq.workflow [T5d] AG-004 Copywriter — Write scripts batch 4
+2026-10-13 11:38:33,547 INFO    creative_hq.workflow      done: $0.379, 2 turns, 0 tool calls
+2026-10-13 11:38:39,288 INFO    creative_hq.workflow      done: $0.404, 2 turns, 0 tool calls
+2026-10-13 11:38:58,442 INFO    creative_hq.workflow      done: $0.455, 2 turns, 0 tool calls
+2026-10-13 11:39:44,672 INFO    creative_hq.workflow      done: $0.579, 2 turns, 0 tool calls
+2026-10-13 11:39:44,685 INFO    creative_hq.workflow [T6] AG-006 Quality Supervisor — QA all scripts, rank top 5
+2026-10-13 11:41:59,324 INFO    creative_hq.workflow      done: $0.994, 3 turns, 0 tool calls
+2026-10-13 11:41:59,338 INFO    creative_hq.reels REELS RUN 20261013-082334-reels-4f27 finished | total $6.430 | /home/user/Claude/deliverables/livetrust-financial/reels/2026-10-13
+2026-10-13 11:43:13,631 INFO    creative_hq.reels REELS REDO 20261013-082334-reels-4f27: ['R05', 'R06', 'R07', 'R08', 'R09', 'R10', 'R16', 'R17', 'R18', 'R19']
+2026-10-13 11:43:13,635 INFO    creative_hq.workflow [T5r1] AG-004 Copywriter — Rewrite scripts ['R05', 'R06', 'R07', 'R08', 'R09', 'R10', 'R16', 'R17', 'R18', 'R19']
+2026-10-13 11:47:03,595 INFO    creative_hq.workflow      done: $0.798, 2 turns, 0 tool calls
+2026-10-13 11:47:03,602 INFO    creative_hq.workflow [T6r1] AG-006 Quality Supervisor — Re-review rewritten scripts ['R05', 'R06', 'R07', 'R08', 'R09', 'R10', 'R16', 'R17', 'R18', 'R19']
+2026-10-13 11:48:18,162 INFO    creative_hq.workflow      done: $0.461, 2 turns, 0 tool calls
+2026-10-13 11:48:18,176 INFO    creative_hq.reels REELS REDO done | run total $7.689
